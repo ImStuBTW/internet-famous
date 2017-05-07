@@ -1,16 +1,49 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import * as testActions from '../../actions/testActions';
+import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
 
 class TestPage extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.incriment = this.incriment.bind(this);
+    }
+
+    incriment() {
+        this.props.actions.addTest();
+    }
+
     render() {
         return (
             <div className="jumbotron">
                 <h1>Test Page</h1>
                 <p>Oh hey look, its the test page.</p>
-                <IndexLink to="/" className="btn btn-primary btn-large">Learn More</IndexLink>
+                <p>Current testValue: {this.props.testValue}</p>
+                <a className="btn btn-primary" onClick={this.incriment}>testValue++</a>
+                <IndexLink to="/" className="btn btn-primary btn-large">Go Back</IndexLink>
             </div>
         );
     }
 }
 
-export default TestPage;
+TestPage.propTypes = {
+    testValue: PropTypes.number.isRequired,
+    actions: PropTypes.object.isRequired
+};
+
+function mapStateToProps(state, ownProps) {
+    return {
+        testValue: state.test
+    };
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(testActions, dispatch)
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(TestPage);
