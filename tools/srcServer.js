@@ -15,6 +15,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath,
     debug: true,
+    historyApiFallback: true,
     devtool: 'inline-source-map'
 }));
 
