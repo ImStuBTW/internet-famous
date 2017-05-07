@@ -1,0 +1,24 @@
+{
+  "name": "internet-famous",
+  "version": "1.0.0",
+  "description": "An open source Monikers implimentation using React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imstuartjones/internet-famous.git"
+  },
+  "keywords": [
+    "monikers",
+    "react",
+    "redux"
+  ],
+  "author": "Stuart jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imstuartjones/internet-famous/issues"
+  },
+  "homepage": "https://github.com/imstuartjones/internet-famous#readme"
+}
