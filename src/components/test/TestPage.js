@@ -21,6 +21,7 @@ class TestPage extends React.Component {
             <div className="jumbotron">
                 <h1>Test Page</h1>
                 <p>Oh hey look, its the test page.</p>
+                <p>Current Dimensions: {this.props.containerWidth} x {this.props.containerHeight}</p>
                 <p>Current testValue: {this.props.testValue}</p>
                 <a className="btn btn-primary" onClick={this.incriment}>testValue++</a>
                 <IndexLink to="/" className="btn btn-primary btn-large">Go Back</IndexLink>
@@ -31,7 +32,9 @@ class TestPage extends React.Component {
 
 TestPage.propTypes = {
     testValue: PropTypes.number.isRequired,
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    containerWidth: PropTypes.object,
+    containerHeight: PropTypes.object
 };
 
 function mapStateToProps(state, ownProps) {

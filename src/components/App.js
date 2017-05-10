@@ -1,5 +1,7 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Header from './core/Header';
+import Main from './core/Main';
 import Footer from './core/Footer';
 import Card from './card/Card';
 
@@ -8,11 +10,7 @@ class App extends React.Component {
         return (
             <div className="layout">
                 <Header />
-                <div className="main">
-                    <div className="content">
-                    {this.props.children}
-                    </div>
-                </div>
+                <Main children={this.props.children} />
                 <Footer />
             </div>
         );
