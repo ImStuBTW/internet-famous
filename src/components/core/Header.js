@@ -1,6 +1,10 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
-class Footer extends React.Component {
+class Header extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+    }
+
     render() {
         return (
             <div className="header">
@@ -10,4 +14,4 @@ class Footer extends React.Component {
     }
 }
 
-export default Footer;
+export default (Header);
