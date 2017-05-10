@@ -1,6 +1,63 @@
 $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+//****************//
+// Page Styles    //
+//****************//
+
+html, body, #app {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: #ddd;
 }
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+
+    height: 100%;
+    width: 100%;
+}
+
+//****************//
+// Header Styles  //
+//****************//
+
+.header {
+    flex: 0 1 auto;
+
+    background: #777;
+}
+
+//****************//
+// Main Styles    //
+//****************//
+
+.main {
+    flex: 2 1 auto;
+}
+
+//****************//
+// Footer Styles  //
+//****************//
+
+.footer {
+    flex: 0 1 auto;
+
+    background: #777;
+}
+
+//****************//
+// Card Styles    //
+//****************//
+
+/* TBD */
