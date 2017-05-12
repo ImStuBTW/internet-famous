@@ -36,6 +36,43 @@ body {
     flex: 0 1 auto;
 
     background: #777;
+    z-index: 1000;
+}
+
+.header-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    h2 {
+        margin: 5px 0px 5px 0px;
+    }
+}
+
+.app {
+    @extend .text-left;
+    flex: 0 1 auto;
+
+    width: 33%;
+}
+
+.timer {
+    @extend .text-center;
+    flex: 0 1 auto;
+
+    width: 33%;
+}
+
+.settings {
+    @extend .text-right;
+    flex: 0 1 auto;
+
+    width: 33%;
 }
 
 //****************//
@@ -43,7 +80,14 @@ body {
 //****************//
 
 .main {
-    flex: 2 1 auto;
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+
+    position: relative;
+    overflow: hidden;
 }
 
 //****************//
@@ -52,12 +96,148 @@ body {
 
 .footer {
     flex: 0 1 auto;
+    background: #777;
+    z-index: 1000;
+}
+
+.footer-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
 
     background: #777;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-text {
+    flex: 0 1 auto;
+}
+
+//****************//
+// Emoji Styles   //
+//****************//
+
+.emoji-one {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.emoji-container {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 //****************//
 // Card Styles    //
 //****************//
 
-/* TBD */
+.card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 10;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card-section {
+    flex-grow: 1;
+    height: 33%;
+}
+
+.card-top {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-bottom {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    @extend .text-center;
+    margin: auto;
+    width: 80%;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
+}
+
+.clue {
+    @extend .text-left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+.line {
+    width: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-top: dotted 4px #ccc;
+}
+
+.category {
+    @extend .text-center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    letter-spacing: 4px;
+    color: #50b595;
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+}
+
+.points {
+    @extend .text-center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 50% 50% 0 0;
+    background: #50b595;
+    color: white;
+    p {
+        letter-spacing: 2px;
+        font-family: 'Asap', sans-serif;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+}

@@ -33,8 +33,8 @@ class TestPage extends React.Component {
 TestPage.propTypes = {
     testValue: PropTypes.number.isRequired,
     actions: PropTypes.object.isRequired,
-    containerWidth: PropTypes.object,
-    containerHeight: PropTypes.object
+    containerWidth: PropTypes.number,
+    containerHeight: PropTypes.number
 };
 
 function mapStateToProps(state, ownProps) {
