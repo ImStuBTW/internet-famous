@@ -1,3 +1,4 @@
 export default {
-    testValue: 1
+    testValue: 1,
+    gameOn: false
 };

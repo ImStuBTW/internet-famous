@@ -39,7 +39,7 @@ TestPage.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        testValue: state.test
+        testValue: state.testValue
     };
 }
 
