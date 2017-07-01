@@ -8,6 +8,7 @@ import * as pauseActions from '../../actions/pauseActions';
 import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
 import FitText from 'react-fittext';
+import CardWrapper from '../core/CardWrapper';
 
 class TestPage extends React.Component {
     constructor(props, context) {
@@ -47,28 +48,31 @@ class TestPage extends React.Component {
 
     render() {
         return (
-            <div className="menu">
-                <div className="menu-section menu-top">
-                    <FitText compressor={0.8}><h1>Super Secret Test Menu</h1></FitText>
+            <CardWrapper cardStyle={this.props.cardStyle}>
+                <div className="menu">
+                    <div className="menu-section menu-top">
+                        <FitText compressor={0.8}><h1>Super Secret Test Menu</h1></FitText>
+                    </div>
+                    <div className="menu-section menu-middle">
+                        <FitText compressor={1.8}><p>testValue: {this.props.testValue}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
+                        <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.startGameOn} role="button" className="btn btn-primary btn-lg btn-block">Start gameOn</a></FitText>
+                        <FitText compressor={2}><a onClick={this.endGameOn} role="button" className="btn btn-primary btn-lg btn-block">End gameOn</a></FitText>
+                        <FitText compressor={1.8}><p>inRound: {this.props.inRound.toString()}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.startRound} role="button" className="btn btn-primary btn-lg btn-block">Start inRound</a></FitText>
+                        <FitText compressor={2}><a onClick={this.endRound} role="button" className="btn btn-primary btn-lg btn-block">End inRound</a></FitText>
+                        <FitText compressor={1.8}><p>isPaused: {this.props.isPaused.toString()}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.pauseRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle isPaused</a></FitText>
+                    </div>
                 </div>
-                <div className="menu-section menu-middle">
-                    <FitText compressor={1.8}><p>testValue: {this.props.testValue}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
-                    <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.startGameOn} role="button" className="btn btn-primary btn-lg btn-block">Start gameOn</a></FitText>
-                    <FitText compressor={2}><a onClick={this.endGameOn} role="button" className="btn btn-primary btn-lg btn-block">End gameOn</a></FitText>
-                    <FitText compressor={1.8}><p>inRound: {this.props.inRound.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.startRound} role="button" className="btn btn-primary btn-lg btn-block">Start inRound</a></FitText>
-                    <FitText compressor={2}><a onClick={this.endRound} role="button" className="btn btn-primary btn-lg btn-block">End inRound</a></FitText>
-                    <FitText compressor={1.8}><p>isPaused: {this.props.isPaused.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.pauseRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle isPaused</a></FitText>
-                </div>
-            </div>
+            </CardWrapper>
         );
     }
 }
 
 TestPage.propTypes = {
+    cardStyle: PropTypes.object.isRequired,
     testValue: PropTypes.number.isRequired,
     actions: PropTypes.object.isRequired,
     containerWidth: PropTypes.number,

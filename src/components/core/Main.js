@@ -39,12 +39,10 @@ class Main extends React.Component {
             height: sizing.height-30
         };
         return (
-            <div className="dimensions-container">
-                <Emoji containerHeight={this.props.containerHeight} containerWidth={this.props.containerWidth} />
-                <div className="card-container" style={cardStyle}>
-                    {this.props.children}
+                <div className="dimensions-container">
+                    <Emoji containerHeight={this.props.containerHeight} containerWidth={this.props.containerWidth} />
+                    {React.cloneElement(this.props.children, {cardStyle: cardStyle})}
                 </div>
-            </div>
         );
     }
 }
