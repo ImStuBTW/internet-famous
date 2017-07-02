@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
 
-class Welcome extends React.Component {
+class About extends React.Component {
     constructor(props, context) {
         super(props, context);
 
@@ -19,24 +19,21 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            <CardWrapper cardStyle={this.props.cardStyle}>
-                <div className="menu">
-                    <div className="menu-section menu-middle">
-                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
-                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
-                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
-                    </div>
-                    <div className="menu-section menu-bottom">
-                        <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Back</a></FitText>
-                    </div>
+            <div className="menu">
+                <div className="menu-section menu-middle">
+                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
                 </div>
-            </CardWrapper>
+                <div className="menu-section menu-bottom">
+                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Back</a></FitText>
+                </div>
+            </div>
         );
     }
 }
 
-Welcome.propTypes = {
-    cardStyle: PropTypes.object.isRequired,
+About.propTypes = {
     push: PropTypes.func.isRequired
 };
 
@@ -46,4 +43,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(null, mapDispatchToProps)(Welcome);
+export default connect(null, mapDispatchToProps)(About);

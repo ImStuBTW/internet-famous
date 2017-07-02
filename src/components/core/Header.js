@@ -14,11 +14,11 @@ class Header extends React.Component {
                 <div className="header-layout">
                     <div className="app">
                         {!this.props.gameOn ?
-                        <h2>Internet Famous</h2> :
+                        <h2></h2> :
                         <h2>Round 1</h2>}
                     </div>
                     <div className="timer">
-                        {this.props.inRound && <h2>0:48</h2>}
+                        {this.props.inRound && <h2 className="text-center">0:48</h2>}
                     </div>
                     <div className="settings">
                         <h2><span className="glyphicon glyphicon-pause" aria-hidden="true" /></h2>

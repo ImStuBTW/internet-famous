@@ -2,6 +2,8 @@ import React from 'react';
 import {PropTypes} from 'prop-types';
 import Dimensions from 'react-dimensions';
 import Emoji from './Emoji';
+import { RouteTransition } from 'react-router-transition';
+import { withRouter } from 'react-router';
 
 class Main extends React.Component {
     constructor(props, context) {
@@ -41,7 +43,19 @@ class Main extends React.Component {
         return (
                 <div className="dimensions-container">
                     <Emoji containerHeight={this.props.containerHeight} containerWidth={this.props.containerWidth} />
-                    {React.cloneElement(this.props.children, {cardStyle: cardStyle})}
+                    <RouteTransition
+                        component={false}
+                        runOnMount
+                        pathname={this.props.location.pathname}
+                        atEnter={{opacity: 0, translateX: 100, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        atLeave={{opacity: 0, translateX: -100, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        atActive={{opacity: 1, translateX: 0, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        mapStyles={styles => ({ opacity: styles.opacity, transform: `translateX(${styles.translateX}%)`, top: styles.top, left: styles.left, width: styles.width, height: styles.height })}
+                        >
+                        <div className="card-container" style={cardStyle}>
+                    {this.props.children}
+                    </div>
+                    </RouteTransition>
                 </div>
         );
     }
@@ -54,4 +68,4 @@ Main.propTypes = {
     containerHeight: PropTypes.number.isRequired
 };
 
-export default Dimensions({debounce: 10})(Main);
+export default withRouter(Dimensions({debounce: 10})(Main));

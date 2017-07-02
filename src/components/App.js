@@ -10,7 +10,7 @@ class App extends React.Component {
         return (
             <div className="layout">
                 <Header />
-                <div className="main"><Main children={this.props.children} /></div>                
+                <div className="main"><Main children={this.props.children} /></div>
                 <Footer />
             </div>
         );
