@@ -5,6 +5,8 @@ import game from './gameReducer';
 import round from './roundReducer';
 import pause from './pauseReducer';
 import team from './teamReducer';
+import redScore from './redScoreReducer';
+import blueScore from './blueScoreReducer';
 
 const rootReducer = combineReducers({
     routing: routerReducer,
@@ -12,9 +14,9 @@ const rootReducer = combineReducers({
     gameOn: game,
     inRound: round,
     isPaused: pause,
-    currentTeam: team,
-    redScore: team,
-    blueScore: team
+    redTeam: team,
+    redScore: redScore,
+    blueScore: blueScore
 });
 
 export default rootReducer;

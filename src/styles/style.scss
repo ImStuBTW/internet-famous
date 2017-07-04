@@ -2,6 +2,21 @@ $icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 //****************//
+// Colors         //
+//****************//
+
+$bg: #584375;
+$ui: #666;
+$ui-font: #999;
+$ui-font-shadow: #777;
+$ui-red: #6a3a3a;
+$ui-font-red: #fa6a6a;
+$ui-font-shadow-red: #aa6a6a;
+$ui-blue: #3a3a6a;
+$ui-font-blue: #6a6afa;
+$ui-font-shadow-blue: #6a6aaa;
+
+//****************//
 // Page Styles    //
 //****************//
 
@@ -13,7 +28,7 @@ html, body, #app {
 }
 
 body {
-    background-color: #434575;
+    background-color: $bg;
 }
 
 .layout {
@@ -35,8 +50,25 @@ body {
 .header {
     flex: 0 1 auto;
 
-    background: #666;
+    background: $ui;
     z-index: 1000;
+    color: $ui-font;
+    text-shadow: 1px 1px 0px $ui-font-shadow;
+    border-bottom: solid 2px $ui-font-shadow;
+}
+
+.header-red {
+    background: $ui-red;
+    color: $ui-font-red;
+    text-shadow: 1px 1px 0px $ui-font-shadow-red;
+    border-bottom: solid 2px $ui-font-shadow-red;
+}
+
+.header-blue {
+    background: $ui-blue;
+    color: $ui-font-blue;
+    text-shadow: 1px 1px 0px $ui-font-shadow-blue;
+    border-bottom: solid 2px $ui-font-shadow-blue;
 }
 
 .header-layout {
@@ -72,11 +104,24 @@ body {
     @extend .text-right;
     flex: 0 1 auto;
 
+    h2{height: 33px;}
+
     width: 33%;
 }
 
 .pause, .pause:hover {
-    color: #333;
+    color: $ui-font;
+    text-shadow: 1px 1px 0px $ui-font-shadow;
+}
+
+.pause-red, .pause-red:hover {
+    color: $ui-font-red;
+    text-shadow: 1px 1px 0px $ui-font-shadow-red;
+}
+
+.pause-blue, .pause-blue:hover {
+    color: $ui-font-blue;
+    text-shadow: 1px 1px 0px $ui-font-shadow-blue;
 }
 
 //****************//
@@ -110,8 +155,22 @@ body {
 
 .footer {
     flex: 0 1 auto;
-    background: #777;
+    background: #666;
     z-index: 1000;
+    color: $ui-font;
+    border-top: solid 2px $ui-font-shadow;
+}
+
+.footer-red {
+    background: $ui-red;
+    color: $ui-font-red;
+    border-top: solid 2px $ui-font-shadow-red;
+}
+
+.footer-blue {
+    background: $ui-blue;
+    color: $ui-font-blue;
+    border-top: solid 2px $ui-font-shadow-blue;
 }
 
 .footer-layout {
@@ -122,7 +181,6 @@ body {
     align-items: stretch;
     align-content: stretch;
 
-    background: #666;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -137,10 +195,18 @@ body {
     padding-right: 2px;
 }
 
+.pass .btn {
+text-shadow: 1px 1px 0px $ui-font-shadow;
+}
+
 .fail {
     flex-grow: 1;
     padding-left: 2px;
     padding-right: 4px;
+}
+
+.fail .btn {
+    text-shadow: 1px 1px 0px $ui-font-shadow;
 }
 
 //****************//

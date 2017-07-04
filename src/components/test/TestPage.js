@@ -6,6 +6,8 @@ import * as gameActions from '../../actions/gameActions';
 import * as roundActions from '../../actions/roundActions';
 import * as pauseActions from '../../actions/pauseActions';
 import * as teamActions from '../../actions/teamActions';
+import * as redScoreActions from '../../actions/redScoreActions';
+import * as blueScoreActions from '../../actions/blueScoreActions';
 import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
 import FitText from 'react-fittext';
@@ -17,11 +19,10 @@ class TestPage extends React.Component {
 
         this.incriment = this.incriment.bind(this);
         this.incrimentScore = this.incrimentScore.bind(this);
-        this.startGameOn = this.startGameOn.bind(this);
-        this.endGameOn = this.endGameOn.bind(this);
-        this.startRound = this.startRound.bind(this);
-        this.endRound = this.endRound.bind(this);
+        this.toggleGameOn = this.toggleGameOn.bind(this);
+        this.toggleRound = this.toggleRound.bind(this);
         this.pauseRound = this.pauseRound.bind(this);
+        this.toggleTeam = this.toggleTeam.bind(this);
     }
 
     incriment() {
@@ -29,23 +30,34 @@ class TestPage extends React.Component {
     }
 
     incrimentScore() {
-        this.props.actions.addScore();
+        if(this.props.redTeam) {
+            this.props.actions.addRed();
+        }
+        else {
+            this.props.actions.addBlue();
+        }
     }
 
-    startGameOn() {
-        this.props.actions.startGame();
+    toggleGameOn() {
+        if(this.props.gameOn) {
+            this.props.actions.endGame();
+        }
+        else {
+            this.props.actions.startGame();
+        }
     }
 
-    endGameOn() {
-        this.props.actions.endGame();
+    toggleRound() {
+        if(this.props.inRound) {
+            this.props.actions.endRound();
+        }
+        else {
+            this.props.actions.startRound();
+        }
     }
 
-    startRound() {
-        this.props.actions.startRound();
-    }
-
-    endRound() {
-        this.props.actions.endRound();
+    toggleTeam() {
+        this.props.actions.switchTeam();
     }
 
     pauseRound() {
@@ -56,18 +68,17 @@ class TestPage extends React.Component {
         return (
             <div className="menu">
                 <div className="menu-section menu-top">
-                    <FitText compressor={0.8}><h1>Super Secret Test Menu</h1></FitText>
+                    <FitText compressor={0.8}><h1>Test Menu</h1></FitText>
                 </div>
                 <div className="menu-section menu-middle">
                     <FitText compressor={1.8}><p>testValue: {this.props.testValue} blueScore: {this.props.blueScore} redScore: {this.props.redScore}</p></FitText>
                     <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
                     <FitText compressor={2}><a onClick={this.incrimentScore} role="button" className="btn btn-primary btn-lg btn-block">Increment Score</a></FitText>
-                    <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.startGameOn} role="button" className="btn btn-primary btn-lg btn-block">Start gameOn</a></FitText>
-                    <FitText compressor={2}><a onClick={this.endGameOn} role="button" className="btn btn-primary btn-lg btn-block">End gameOn</a></FitText>
-                    <FitText compressor={1.8}><p>inRound: {this.props.inRound.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.startRound} role="button" className="btn btn-primary btn-lg btn-block">Start inRound</a></FitText>
-                    <FitText compressor={2}><a onClick={this.endRound} role="button" className="btn btn-primary btn-lg btn-block">End inRound</a></FitText>
+                    <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()} inRound: {this.props.inRound.toString()}</p></FitText>
+                    <FitText compressor={2}><a onClick={this.toggleGameOn} role="button" className="btn btn-primary btn-lg btn-block">Toggle gameOn</a></FitText>
+                    <FitText compressor={2}><a onClick={this.toggleRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle inRound</a></FitText>
+                    <FitText compressor={1.8}><p>currentTeam: {this.props.redTeam ? 'Red' : 'Blue'}</p></FitText>
+                    <FitText compressor={2}><a onClick={this.toggleTeam} role="button" className="btn btn-primary btn-lg btn-block">Toggle currentTeam</a></FitText>
                     <FitText compressor={1.8}><p>isPaused: {this.props.isPaused.toString()}</p></FitText>
                     <FitText compressor={2}><a onClick={this.pauseRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle isPaused</a></FitText>
                 </div>
@@ -77,6 +88,7 @@ class TestPage extends React.Component {
 }
 
 TestPage.propTypes = {
+    redTeam: PropTypes.bool.isRequired,
     testValue: PropTypes.number.isRequired,
     blueScore: PropTypes.number.isRequired,
     redScore: PropTypes.number.isRequired,
@@ -91,6 +103,7 @@ TestPage.propTypes = {
 function mapStateToProps(state, ownProps) {
     return {
         testValue: state.testValue,
+        redTeam: state.redTeam,
         redScore: state.redScore,
         blueScore: state.blueScore,
         gameOn: state.gameOn,
@@ -101,7 +114,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, testActions, gameActions, roundActions, pauseActions, teamActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, testActions, gameActions, roundActions, pauseActions, teamActions, redScoreActions, blueScoreActions), dispatch)
     };
 }
 

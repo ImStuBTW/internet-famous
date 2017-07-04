@@ -3,7 +3,7 @@ export default {
     gameOn: false,
     inRound: false,
     isPaused: false,
-    currentTeam: 'Red',
+    redTeam: true,
     blueScore: 0,
     redScore: 0
 };

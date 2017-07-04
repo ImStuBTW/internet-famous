@@ -17,18 +17,18 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="header">
+            <div className={'header ' + (this.props.gameOn ? this.props.redTeam ? 'header-red' : 'header-blue' : '')}>
                 <div className="header-layout">
                     <div className="app">
                         {!this.props.gameOn ?
-                        <h2 /> :
-                        <h2>Round 1</h2>}
+                        <h2>Welcome</h2> :
+                        <h2>Score: {this.props.redTeam ? this.props.redScore : this.props.blueScore}</h2>}
                     </div>
                     <div className="timer">
                         {this.props.inRound && <h2 className="text-center">0:48</h2>}
                     </div>
                     <div className="settings">
-                        {this.props.isPaused ? <h2><a onClick={this.pauseRound} className="pause"><span className="glyphicon glyphicon-play" aria-hidden="true" /></a></h2> : <h2><a onClick={this.pauseRound} className="pause"><span className="glyphicon glyphicon-pause" aria-hidden="true" /></a></h2>}
+                        {this.props.inRound && <h2><a onClick={this.pauseRound} className={'pause ' + (this.props.gameOn ? this.props.redTeam ? 'pause-red' : 'pause-blue' : '')}><span className={'glyphicon glyphicon-' + (this.props.isPaused ? 'play' : 'pause')} aria-hidden="true" /></a></h2>}
                     </div>
                 </div>
             </div>
@@ -40,14 +40,20 @@ Header.propTypes = {
     gameOn: PropTypes.bool.isRequired,
     inRound: PropTypes.bool.isRequired,
     isPaused: PropTypes.bool.isRequired,
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    redTeam: PropTypes.bool.isRequired,
+    redScore: PropTypes.number.isRequired,
+    blueScore: PropTypes.number.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
         gameOn: state.gameOn,
         inRound: state.inRound,
-        isPaused: state.isPaused
+        isPaused: state.isPaused,
+        redTeam: state.redTeam,
+        redScore: state.redScore,
+        blueScore: state.blueScore
     };
 }
 
