@@ -5,6 +5,7 @@ import * as testActions from '../../actions/testActions';
 import * as gameActions from '../../actions/gameActions';
 import * as roundActions from '../../actions/roundActions';
 import * as pauseActions from '../../actions/pauseActions';
+import * as teamActions from '../../actions/teamActions';
 import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
 import FitText from 'react-fittext';
@@ -15,6 +16,7 @@ class TestPage extends React.Component {
         super(props, context);
 
         this.incriment = this.incriment.bind(this);
+        this.incrimentScore = this.incrimentScore.bind(this);
         this.startGameOn = this.startGameOn.bind(this);
         this.endGameOn = this.endGameOn.bind(this);
         this.startRound = this.startRound.bind(this);
@@ -24,6 +26,10 @@ class TestPage extends React.Component {
 
     incriment() {
         this.props.actions.addTest();
+    }
+
+    incrimentScore() {
+        this.props.actions.addScore();
     }
 
     startGameOn() {
@@ -53,8 +59,9 @@ class TestPage extends React.Component {
                     <FitText compressor={0.8}><h1>Super Secret Test Menu</h1></FitText>
                 </div>
                 <div className="menu-section menu-middle">
-                    <FitText compressor={1.8}><p>testValue: {this.props.testValue}</p></FitText>
+                    <FitText compressor={1.8}><p>testValue: {this.props.testValue} blueScore: {this.props.blueScore} redScore: {this.props.redScore}</p></FitText>
                     <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
+                    <FitText compressor={2}><a onClick={this.incrimentScore} role="button" className="btn btn-primary btn-lg btn-block">Increment Score</a></FitText>
                     <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()}</p></FitText>
                     <FitText compressor={2}><a onClick={this.startGameOn} role="button" className="btn btn-primary btn-lg btn-block">Start gameOn</a></FitText>
                     <FitText compressor={2}><a onClick={this.endGameOn} role="button" className="btn btn-primary btn-lg btn-block">End gameOn</a></FitText>
@@ -71,6 +78,8 @@ class TestPage extends React.Component {
 
 TestPage.propTypes = {
     testValue: PropTypes.number.isRequired,
+    blueScore: PropTypes.number.isRequired,
+    redScore: PropTypes.number.isRequired,
     actions: PropTypes.object.isRequired,
     containerWidth: PropTypes.number,
     containerHeight: PropTypes.number,
@@ -82,6 +91,8 @@ TestPage.propTypes = {
 function mapStateToProps(state, ownProps) {
     return {
         testValue: state.testValue,
+        redScore: state.redScore,
+        blueScore: state.blueScore,
         gameOn: state.gameOn,
         inRound: state.inRound,
         isPaused: state.isPaused
@@ -90,7 +101,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, testActions, gameActions, roundActions, pauseActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, testActions, gameActions, roundActions, pauseActions, teamActions), dispatch)
     };
 }
 
