@@ -4,8 +4,8 @@ export function addRedSuccess(value) {
     return { type: types.ADD_RED_SUCCESS, redScore: value };
 }
 
-export function addRed() {
+export function addRed(score) {
     return dispatch => {
-        dispatch(addRedSuccess(1));
+        dispatch(addRedSuccess(score));
     };
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
+import * as gameActions from '../../actions/gameActions';
+import * as roundActions from '../../actions/roundActions';
 import PropTypes from 'prop-types';
 import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
@@ -11,6 +13,21 @@ class Welcome extends React.Component {
         super(props, context);
 
         this.handleLink = this.handleLink.bind(this);
+        this.endGame = this.endGame.bind(this);
+        this.endRound = this.endRound.bind(this);
+    }
+
+    componentDidMount() {
+        this.endGame();
+        this.endRound();
+    }
+
+    endGame() {
+        this.props.actions.endGame();
+    }
+
+    endRound() {
+        this.props.actions.endRound();
     }
 
     handleLink(path) {
@@ -38,12 +55,14 @@ class Welcome extends React.Component {
 }
 
 Welcome.propTypes = {
-    push: PropTypes.func.isRequired
+    push: PropTypes.func.isRequired,
+    actions: PropTypes.object.isRequired
 };
 
 function mapDispatchToProps(dispatch) {
     return {
-        push: bindActionCreators(push, dispatch)
+        push: bindActionCreators(push, dispatch),
+        actions: bindActionCreators(Object.assign({}, gameActions, roundActions), dispatch)
     };
 }
 

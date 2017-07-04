@@ -5,5 +5,6 @@ export default {
     isPaused: false,
     redTeam: true,
     blueScore: 0,
-    redScore: 0
+    redScore: 0,
+    card: 'a1'
 };

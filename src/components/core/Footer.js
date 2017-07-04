@@ -3,8 +3,10 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as redScoreActions from '../../actions/redScoreActions';
 import * as blueScoreActions from '../../actions/blueScoreActions';
+import * as cardActions from '../../actions/cardActions';
 import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
+import Cards from '../card/Cards';
 
 class Footer extends React.Component {
     constructor(props, context) {
@@ -16,15 +18,17 @@ class Footer extends React.Component {
 
     pass() {
         if(this.props.redTeam) {
-            this.props.actions.addRed();
+            this.props.actions.addRed(parseInt(Cards[this.props.card].score));
+            this.props.actions.nextCard();
         }
         else {
-            this.props.actions.addBlue();
+            this.props.actions.addBlue(parseInt(Cards[this.props.card].score));
+            this.props.actions.nextCard();
         }
     }
 
     fail() {
-
+        this.props.actions.nextCard();
     }
 
     render() {
@@ -52,22 +56,23 @@ Footer.propTypes = {
     inRound: PropTypes.bool.isRequired,
     isPaused: PropTypes.bool.isRequired,
     redTeam: PropTypes.bool.isRequired,
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    card: PropTypes.string.isRequired
 };
-
 
 function mapStateToProps(state, ownProps) {
     return {
         gameOn: state.gameOn,
         inRound: state.inRound,
         isPaused: state.isPaused,
-        redTeam: state.redTeam
+        redTeam: state.redTeam,
+        card: state.card
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions, cardActions), dispatch)
     };
 }
 

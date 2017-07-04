@@ -4,8 +4,8 @@ export function addBlueSuccess(value) {
     return { type: types.ADD_BLUE_SUCCESS, blueScore: value };
 }
 
-export function addBlue() {
+export function addBlue(score) {
     return dispatch => {
-        dispatch(addBlueSuccess(1));
+        dispatch(addBlueSuccess(score));
     };
 }

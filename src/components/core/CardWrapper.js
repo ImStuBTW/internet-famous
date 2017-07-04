@@ -10,7 +10,6 @@ class CardWrapper extends React.Component {
 
     render() {
         return (
-
                 <div className="card-container" style={this.props.cardStyle}>
                     {this.props.children}
                 </div>
