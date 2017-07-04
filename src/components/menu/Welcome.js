@@ -25,7 +25,7 @@ class Welcome extends React.Component {
                     <FitText compressor={1.2}><h2>An Open-Source Monikers App</h2></FitText>
                 </div>
                 <div className="menu-section menu-middle">
-                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/card')} role="button" className="btn btn-primary btn-lg btn-block">Start Full Game</a></FitText>
+                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/game')} role="button" className="btn btn-primary btn-lg btn-block">Start Full Game</a></FitText>
                     <FitText compressor={1.6}><a onClick={() => this.handleLink('/test')} role="button" className="btn btn-default btn-lg btn-block">Quick Play</a></FitText>
                     <FitText compressor={1.6}><a onClick={() => this.handleLink('/about')} role="button" className="btn btn-default btn-lg btn-block">About Internet Famous</a></FitText>
                 </div>

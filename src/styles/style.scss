@@ -75,6 +75,10 @@ body {
     width: 33%;
 }
 
+.pause, .pause:hover {
+    color: #333;
+}
+
 //****************//
 // Main Styles    //
 //****************//
@@ -125,6 +129,18 @@ body {
 
 .footer-text {
     flex: 0 1 auto;
+}
+
+.pass {
+    flex-grow: 1;
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+.fail {
+    flex-grow: 1;
+    padding-left: 2px;
+    padding-right: 4px;
 }
 
 //****************//

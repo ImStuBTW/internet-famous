@@ -53,8 +53,8 @@ class Main extends React.Component {
                         mapStyles={styles => ({ opacity: styles.opacity, transform: `translateX(${styles.translateX}%)`, top: styles.top, left: styles.left, width: styles.width, height: styles.height })}
                         >
                         <div className="card-container" style={cardStyle}>
-                    {this.props.children}
-                    </div>
+                            {this.props.children}
+                        </div>
                     </RouteTransition>
                 </div>
         );
@@ -65,7 +65,8 @@ class Main extends React.Component {
 Main.propTypes = {
     children: PropTypes.object.isRequired,
     containerWidth: PropTypes.number.isRequired,
-    containerHeight: PropTypes.number.isRequired
+    containerHeight: PropTypes.number.isRequired,
+    location: PropTypes.object.isRequired
 };
 
 export default withRouter(Dimensions({debounce: 10})(Main));

@@ -14,13 +14,13 @@ class Footer extends React.Component {
                 <div className="footer-layout">
                     <div className="pass">
                         {this.props.inRound ?
-                        <a className="btn btn-success btn-lg" href="#" role="button">Score</a> :
-                        <a className="btn btn-success btn-lg disabled" href="#" role="button">Score</a>}
+                        <a className="btn btn-success btn-lg btn-block" href="#" role="button">Score</a> :
+                        <a className="btn btn-success btn-lg btn-block disabled" href="#" role="button">Score</a>}
                     </div>
                     <div className="fail">
                         {this.props.inRound ?
-                        <a className="btn btn-danger btn-lg" href="#" role="button">Skip</a> :
-                        <a className="btn btn-danger btn-lg disabled" href="#" role="button">Skip</a>}
+                        <a className="btn btn-danger btn-lg btn-block" href="#" role="button">Skip</a> :
+                        <a className="btn btn-danger btn-lg btn-block disabled" href="#" role="button">Skip</a>}
                     </div>
                 </div>
             </div>
