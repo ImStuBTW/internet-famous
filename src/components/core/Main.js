@@ -4,6 +4,8 @@ import Dimensions from 'react-dimensions';
 import Emoji from './Emoji';
 import { RouteTransition } from 'react-router-transition';
 import { withRouter } from 'react-router';
+import objectAssign from 'object-assign';
+import { spring } from 'react-motion';
 
 class Main extends React.Component {
     constructor(props, context) {
@@ -47,14 +49,12 @@ class Main extends React.Component {
                         component={false}
                         runOnMount
                         pathname={this.props.location.pathname}
-                        atEnter={{opacity: 0, translateX: 100, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
-                        atLeave={{opacity: 0, translateX: -100, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
-                        atActive={{opacity: 1, translateX: 0, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
-                        mapStyles={styles => ({ opacity: styles.opacity, transform: `translateX(${styles.translateX}%)`, top: styles.top, left: styles.left, width: styles.width, height: styles.height })}
+                        atEnter={{opacity: 0, offset: 100, top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        atLeave={{opacity: spring(0, { stiffness: 330, damping: 30 }), offset: spring(-100, { stiffness: 330, damping: 30 }), top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        atActive={{opacity: spring(1, { stiffness: 330, damping: 30 }), offset: spring(0, { stiffness: 330, damping: 30 }), top: cardStyle.top, left: cardStyle.left, width: cardStyle.width, height: cardStyle.height}}
+                        mapStyles={styles => ({ opacity: styles.opacity, transform: `translateX(${styles.offset}px)`, top: styles.top, left: styles.left, width: styles.width, height: styles.height})}
                         >
-                        <div className="card-container" style={cardStyle}>
                             {this.props.children}
-                        </div>
                     </RouteTransition>
                 </div>
         );

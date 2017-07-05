@@ -31,10 +31,10 @@ class TestPage extends React.Component {
 
     incrimentScore() {
         if(this.props.redTeam) {
-            this.props.actions.addRed();
+            this.props.actions.addRed(1);
         }
         else {
-            this.props.actions.addBlue();
+            this.props.actions.addBlue(1);
         }
     }
 
@@ -66,23 +66,25 @@ class TestPage extends React.Component {
 
     render() {
         return (
-            <div className="menu">
-                <div className="menu-section menu-top">
-                    <FitText compressor={0.8}><h1>Test Menu</h1></FitText>
+            <CardWrapper cardStyle={this.props.style}>
+                <div className="menu">
+                    <div className="menu-section menu-top">
+                        <FitText compressor={0.8}><h1>Test Menu</h1></FitText>
+                    </div>
+                    <div className="menu-section menu-middle">
+                        <FitText compressor={1.8}><p>testValue: {this.props.testValue} blueScore: {this.props.blueScore} redScore: {this.props.redScore}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
+                        <FitText compressor={2}><a onClick={this.incrimentScore} role="button" className="btn btn-primary btn-lg btn-block">Increment Score</a></FitText>
+                        <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()} inRound: {this.props.inRound.toString()}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.toggleGameOn} role="button" className="btn btn-primary btn-lg btn-block">Toggle gameOn</a></FitText>
+                        <FitText compressor={2}><a onClick={this.toggleRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle inRound</a></FitText>
+                        <FitText compressor={1.8}><p>currentTeam: {this.props.redTeam ? 'Red' : 'Blue'}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.toggleTeam} role="button" className="btn btn-primary btn-lg btn-block">Toggle currentTeam</a></FitText>
+                        <FitText compressor={1.8}><p>isPaused: {this.props.isPaused.toString()}</p></FitText>
+                        <FitText compressor={2}><a onClick={this.pauseRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle isPaused</a></FitText>
+                    </div>
                 </div>
-                <div className="menu-section menu-middle">
-                    <FitText compressor={1.8}><p>testValue: {this.props.testValue} blueScore: {this.props.blueScore} redScore: {this.props.redScore}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.incriment} role="button" className="btn btn-primary btn-lg btn-block">Increment testValue</a></FitText>
-                    <FitText compressor={2}><a onClick={this.incrimentScore} role="button" className="btn btn-primary btn-lg btn-block">Increment Score</a></FitText>
-                    <FitText compressor={1.8}><p>gameOn: {this.props.gameOn.toString()} inRound: {this.props.inRound.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.toggleGameOn} role="button" className="btn btn-primary btn-lg btn-block">Toggle gameOn</a></FitText>
-                    <FitText compressor={2}><a onClick={this.toggleRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle inRound</a></FitText>
-                    <FitText compressor={1.8}><p>currentTeam: {this.props.redTeam ? 'Red' : 'Blue'}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.toggleTeam} role="button" className="btn btn-primary btn-lg btn-block">Toggle currentTeam</a></FitText>
-                    <FitText compressor={1.8}><p>isPaused: {this.props.isPaused.toString()}</p></FitText>
-                    <FitText compressor={2}><a onClick={this.pauseRound} role="button" className="btn btn-primary btn-lg btn-block">Toggle isPaused</a></FitText>
-                </div>
-            </div>
+            </CardWrapper>
         );
     }
 }
@@ -97,7 +99,8 @@ TestPage.propTypes = {
     containerHeight: PropTypes.number,
     gameOn: PropTypes.bool.isRequired,
     inRound: PropTypes.bool.isRequired,
-    isPaused: PropTypes.bool.isRequired
+    isPaused: PropTypes.bool.isRequired,
+    style: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {

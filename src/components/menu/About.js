@@ -19,22 +19,25 @@ class About extends React.Component {
 
     render() {
         return (
-            <div className="menu">
-                <div className="menu-section menu-middle">
-                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
-                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
-                    <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+            <CardWrapper cardStyle={this.props.style}>
+                <div className="menu">
+                    <div className="menu-section menu-middle">
+                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                        <FitText compressor={2}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                    </div>
+                    <div className="menu-section menu-bottom">
+                        <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Back</a></FitText>
+                    </div>
                 </div>
-                <div className="menu-section menu-bottom">
-                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Back</a></FitText>
-                </div>
-            </div>
+            </CardWrapper>
         );
     }
 }
 
 About.propTypes = {
-    push: PropTypes.func.isRequired
+    push: PropTypes.func.isRequired,
+    style: PropTypes.object.isRequired
 };
 
 function mapDispatchToProps(dispatch) {

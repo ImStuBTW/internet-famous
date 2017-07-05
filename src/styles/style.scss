@@ -43,6 +43,14 @@ body {
     width: 100%;
 }
 
+.red-team {
+    color: $ui-font-red;
+}
+
+.blue-team {
+    color: $ui-font-blue;
+}
+
 //****************//
 // Header Styles  //
 //****************//
@@ -272,6 +280,10 @@ text-shadow: 1px 1px 0px $ui-font-shadow;
     justify-content: flex-end;
     flex-direction: column;
     text-align: center;
+}
+
+.intro-middle, intro-bottom {
+    text-align: left;
 }
 
 //****************//

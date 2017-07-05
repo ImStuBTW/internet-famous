@@ -8,6 +8,7 @@ import team from './teamReducer';
 import redScore from './redScoreReducer';
 import blueScore from './blueScoreReducer';
 import card from './cardReducer';
+import phase from './phaseReducer';
 
 const rootReducer = combineReducers({
     routing: routerReducer,
@@ -18,7 +19,8 @@ const rootReducer = combineReducers({
     redTeam: team,
     redScore: redScore,
     blueScore: blueScore,
-    card: card
+    card: card,
+    phase: phase
 });
 
 export default rootReducer;

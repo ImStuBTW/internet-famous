@@ -6,5 +6,6 @@ export default {
     redTeam: true,
     blueScore: 0,
     redScore: 0,
-    card: 'a1'
+    card: 'a1',
+    phase: 0
 };

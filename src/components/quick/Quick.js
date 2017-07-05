@@ -7,6 +7,7 @@ import * as roundActions from '../../actions/roundActions';
 import Card from '../card/Card';
 import Cards from '../card/Cards';
 import CardWrapper from '../core/CardWrapper';
+import QuickIntro from './QuickIntro';
 import Transition from 'react-motion-ui-pack';
 import { spring } from 'react-motion';
 
@@ -14,13 +15,16 @@ class Game extends React.Component {
     constructor(props, context) {
         super(props, context);
 
+        this.state = {
+            instructions: true
+        };
+
         this.startGame = this.startGame.bind(this);
         this.startRound = this.startRound.bind(this);
     }
 
     componentDidMount() {
         this.startGame();
-        this.startRound();
     }
 
     startGame() {
@@ -30,7 +34,6 @@ class Game extends React.Component {
     startRound() {
         this.props.actions.startRound();
     }
-
     render() {
         const pageLetter = this.props.card[0];
         const cardNumber = this.props.card[1];
@@ -52,11 +55,15 @@ class Game extends React.Component {
                 enter={{opacity: spring(1, { stiffness: 330, damping: 30 }), translateX: spring(0, { stiffness: 330, damping: 30 })}}
                 leave={{opacity: spring(0, { stiffness: 330, damping: 30 }), translateX: spring(-100, { stiffness: 330, damping: 30 })}}
             >
-
+            {!this.props.inRound ?
+                <CardWrapper key={'QuickIntro'} cardStyle={this.props.style}>
+                    <QuickIntro />
+                </CardWrapper>
+            :
                 <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
                     <Card key={'Card-' + pageLetter + cardNumber} card={card} />
                 </CardWrapper>
-
+            }
             </Transition>
         );
     }
@@ -65,12 +72,15 @@ class Game extends React.Component {
 Game.propTypes = {
     style: PropTypes.object,
     card: PropTypes.string.isRequired,
-    actions: PropTypes.object.isRequired
+    actions: PropTypes.object.isRequired,
+    inRound: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        card: state.card
+        card: state.card,
+        inRound: state.inRound,
+        phase: state.phase
     };
 }
 
