@@ -24,11 +24,8 @@ class Header extends React.Component {
                         <h2>Welcome</h2> :
                         <h2>Score: {this.props.redTeam ? this.props.redScore : this.props.blueScore}</h2>}
                     </div>
-                    <div className="timer">
-                        {this.props.inRound && <h2 className="text-center">0:48</h2>}
-                    </div>
                     <div className="settings">
-                        {this.props.inRound && <h2><a onClick={this.pauseRound} className={'pause ' + (this.props.gameOn ? this.props.redTeam ? 'pause-red' : 'pause-blue' : '')}><span className={'glyphicon glyphicon-' + (this.props.isPaused ? 'play' : 'pause')} aria-hidden="true" /></a></h2>}
+                        <h2>{this.props.inRound && <span>{(() => {if(this.props.timerValue === 60) {return '1:00';} else if(this.props.timerValue < 10) {return '0:0' + this.props.timerValue} else {return '0:' + this.props.timerValue}})()}</span>} {this.props.inRound && <a onClick={this.pauseRound} className={'pause ' + (this.props.gameOn ? this.props.redTeam ? 'pause-red' : 'pause-blue' : '')}><span className={'glyphicon glyphicon-' + (this.props.isPaused ? 'play' : 'pause')} aria-hidden="true" /></a>}</h2>
                     </div>
                 </div>
             </div>
@@ -43,7 +40,8 @@ Header.propTypes = {
     actions: PropTypes.object.isRequired,
     redTeam: PropTypes.bool.isRequired,
     redScore: PropTypes.number.isRequired,
-    blueScore: PropTypes.number.isRequired
+    blueScore: PropTypes.number.isRequired,
+    timerValue: PropTypes.number.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -53,7 +51,8 @@ function mapStateToProps(state, ownProps) {
         isPaused: state.isPaused,
         redTeam: state.redTeam,
         redScore: state.redScore,
-        blueScore: state.blueScore
+        blueScore: state.blueScore,
+        timerValue: state.timerValue
     };
 }
 

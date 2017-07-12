@@ -36,12 +36,12 @@ class Footer extends React.Component {
             <div className={'footer ' + (this.props.gameOn ? this.props.redTeam ? 'footer-red' : 'footer-blue' : '')}>
                 <div className="footer-layout">
                     <div className="pass">
-                        {this.props.inRound ?
+                        {(this.props.inRound && !this.props.isPaused) ?
                         <a onClick={this.pass} className="btn btn-success btn-lg btn-block" role="button">Score</a> :
                         <a className="btn btn-success btn-lg btn-block disabled" role="button">Score</a>}
                     </div>
                     <div className="fail">
-                        {this.props.inRound ?
+                        {(this.props.inRound && !this.props.isPaused)?
                         <a onClick={this.fail} className="btn btn-danger btn-lg btn-block" role="button">Skip</a> :
                         <a className="btn btn-danger btn-lg btn-block disabled" role="button">Skip</a>}
                     </div>
