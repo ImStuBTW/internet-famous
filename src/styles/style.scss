@@ -98,23 +98,25 @@ body {
     @extend .text-left;
     flex: 0 1 auto;
 
-    width: 33%;
-}
-
-.timer {
-    @extend .text-center;
-    flex: 0 1 auto;
-
-    width: 33%;
+    width: 50%;
 }
 
 .settings {
     @extend .text-right;
     flex: 0 1 auto;
 
-    h2{height: 33px;}
+    h2 {
+        height: 33px;
+        span {
+            height: 33px;
+        }
+    }
 
-    width: 33%;
+    .pause {
+        height: 33px;
+    }
+
+    width: 50%;
 }
 
 .pause, .pause:hover {

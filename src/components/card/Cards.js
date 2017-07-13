@@ -149,16 +149,257 @@ export default {
     // Page 4
     c1: {
         title: 'A Narwhal',
-        clue: '',
+        clue: 'An Arctic whale with a large protruding tusk, which is actually an elongated canine tooth. Its name translates to "corpse whale" from the Old Norse, due to the similarity of its flesh tone with a drowned sailor. According to the Weebl\'s Stuff song, they are also awesome.',
         category: 'ET CETERA',
         score: '4',
         color: red
     },
     c2: {
         title: 'Hitler\'s Brain',
+        clue: 'A trope first featured in a 60s sci-fi film, where Nazi scientists remove this organ from the Führer\'s head and hide it in the fictional South American country of Mandoras. The film currently holds an approval rating of 0% on the metareview site Rotten Tomatoes.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    c3: {
+        title: '100 Duck-Sized Horses',
+        clue: 'From a hypothetical scenario that poses the question of who would win in a fight: a single equine-sized fowl or fivescore fowl-sized equines. The question was made famous in a 2012 Reddit AMA with President Barack Obama. The comment recieved over 1,000 upvotes.',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    c4: {
+        title: 'Achilles',
+        clue: 'An anchient Greek hero and demigod from Homer\'s Iliad, who defeated the Trojan warrior Hector as revenge for killing his friend and lover Patroclus. He was later killed by an arrow to his heel-the only part of his body that was vulnerable to physical injury.',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    c5: {
+        title: 'Che Guevara',
+        clue: 'A Marxist leader in the Cuban Revolution, whose rebellious image has been commodified on T-shirts worldwide. The image, a high contrast version of the Guerrillero Heroico photograph by Alberto Korda, depicts him with a mustache, beret, and implacable expression.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    c6: {
+        title: 'A Velociraptor',
+        clue: 'A bipedal, feathred carnivore from the Cretaceous Period. It is one of the most well-known dinosaurs due to its prominent role in the 1993 film Jurassic Park, where it was depicted inaccurately as large and feathreless, but quite accurately as a clever girl.',
+        category: 'CARD BY PATRICK KLEPEK',
+        score: '2',
+        color: blue
+    },
+    c7: {
+        title: 'Homo Erectus',
+        clue: 'A distant relative of humans that went extinct approximately 100,000 years ago. Latin for "upright man," this hominid walked vertically and likely lived in small hunter-gatherer bands, but lacked the large cranial capacity of anatomically modern humans.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    c8: {
+        title: 'William Howard Taft',
+        clue: 'Secretary of War, 10th Chief Justice of the Supreme Court, and most obese president in US history. It is unclear whether the story of his getting stuck in a White House bathtub is true, but it was confirmed that on at least one occasion he caused it to overflow.',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    c9: {
+        title: 'L. Ron Hubbard',
+        clue: 'A scientific author and the founder of Scientology. The religion derives from his self-helf program Dianetics, which he modestly described as "a milestone for man comparable to his discovery of fire and superior to the invention of the sheel and the arch."',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    //Page 5
+    d1: {
+        title: 'Shirtless Vladimir Putin',
+        clue: 'Former KGB officer and current President of Russia. Under his rule, Russia has grown increasingly undemocratic. He cultivates a rugged image in state media, being shown riding half-dressed on horseback and "discovering" two Ancient Greek urns in the Black Sea.',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    d2: {
+        title: 'Christopher Walken',
+        clue: 'An actor known for his odd line readinds, dance skills, and creepily handsoe face. Despite being an Academy Award winning actor, he is perhaps known best for the "Weapon of Choice" music video and as Bruce Dickinson, an SNL character who asks for more cowbell.',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    d3: {
+        title: 'Baby Jessica',
+        clue: 'The subject of a 24-hour media frenzy in 1987 when she fell down a well, setting a precedent for how cable news networks cover small local tragedies. At the time, President Ronald Regan claimed "everybody in America became [her] godmothers and godfathers."',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    d4: {
+        title: 'Jackson Pollock',
+        clue: 'An abstract expressionist painter known for his drip paintings, which were created by laying the canvas on the floor and pouring paint from above. His painting, "No. 5, 1984," was sold for more than $140M in 2006 by David Geffen-The second most expensive painting ever solid.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    d5: {
+        title: 'Caligula',
+        clue: 'A Roman emperor known for his cruelty, extravagance, and sexual perversity. He was the first Roman emperor to be assassinated. He is best known for being the title character in a semi-pornographic film starting Malcom McDowell that depicted his orgies in lengthy detail.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    d6: {
+        title: 'Julian Assange',
+        clue: 'The Editor-in-cheif of WikiLeaks and alleged sexual predator. Fearing extradition to Sweden for sexual assult and the US for espionage related to the Chelsea Manning leaks, he has been living in the Ecuadorian embassy in London since 2012.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    d7: {
+        title: 'The Pied Piper',
+        clue: 'A characteri n the medieval forklore that led a group of children away from the town of Hamelin, Germany with a magic flute. In the tale, he was hired to clear the town of a rate infestation, but after receiving no payment, he used the flute to kidnap their children instead.',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    d8: {
+        title: 'Atlas',
+        clue: 'A titan from Greek mythology, who was forced to hold up the celestial spheres as punishment for fighting the Olympian gods in the War of the Titans. He is often shown holding a sphere on his shoulders, which is now commonly mistaken to be the Earth.',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    d9: {
+        title: 'Pavlov\'s Dog',
+        clue: 'A canine from a Russian physiologist\'s classical conditioning experiments. By ringing a bell associated with food, he could induce the animal to salivate even with no food present. He exteneded these experiments to children, who underwent surgeries so he could better collect their saliva.',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    //Page 6
+    e1: {
+        title: 'Oscar Pistorius',
+        clue: 'Somtimes known as the "Blade Runner" or "the fastest man on no legs," this sprinter became the first double leg amputee to participate in the Olympics. He was subsequently charged with the murder of his girlfriend, but maintaints that he confused her for an intruder.',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    e2: {
+        title: 'Leeroy Jenkins',
+        clue: 'A World of Warcraft player famous for going afk while his guild planned a complicated raid, then proceeded to run into the encounter streaming his own name and getting his guildemates killed. After being called "stupid as hell," he cryptically replied, "At least I have chicken."',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    e3: {
+        title: 'Lou Ghrig',
+        clue: 'A first baseman for the New York Yankees and member of the baseball\'s Hall of Fame. He was the first baseball player to have his uniform number retired. Late in his career, he developed amyotrophic lateral sclerosis (ALS), which is now synonymous with his name.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    e4: {
+        title: 'Elian Gonzalez',
+        clue: 'A Cuban boy who was the subject of an international incident when his relatives attempted to keep him in the US against his father\'s wishes taht he return to Cuba. A famous image from the event shows an armed border agent discovering the boy cowering in a closet.',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    e5: {
+        title: 'A Raver',
+        clue: 'A person who attends a party featuring electronic music, dancing, and visual effects. Attendees are often characterized as being under the influence of MDMA, using fluorescent glowsticks, sucking on pacifiers, applying Vicks VapoRub, and wearing phat pants.',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    e6: {
+        title: 'Al Roker',
+        clue: 'The flamboyant weatherman for The Today Show who was known for being obeses before having gastric bypass surgery. He was famously thrown to the ground reporting on Hurricane Wilma. He also writes mystery novels about Billy Blessing, a chef and amateur detective.',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    e7: {
+        title: 'Charlton Heston',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    e8: {
+        title: 'Jacques Cousteau',
         clue: '',
         category: 'HISTORICAL FIGURE',
         score: '2',
         color: blue
+    },
+    e9: {
+        title: 'Mr. Trololo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    //Page 7
+    f1: {
+        title: 'Evander Holyfield\'s Ear',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    f2: {
+        title: 'Hondor',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    f3: {
+        title: 'A Communist',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    f4: {
+        title: 'Khalid Sheikh Mohammed',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    f5: {
+        title: 'The 99%',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    f6: {
+        title: 'Richard Pryor',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    f7: {
+        title: 'Rosa Parks',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    f8: {
+        title: 'An Illusionist',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    f9: {
+        title: 'A Castrato',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
     }
 };

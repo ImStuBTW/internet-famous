@@ -8,5 +8,5 @@ export default {
     redScore: 0,
     card: 'a1',
     phase: 0,
-    timerValue: 10
+    timerValue: 60
 };
