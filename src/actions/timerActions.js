@@ -44,11 +44,11 @@ export function timerStop() {
     return dispatch => {
         clearInterval(timer);
         dispatch(timerStopSuccess());
-    }
+    };
 }
 
 export function timerReset() {
     return dispatch => {
         dispatch(timerResetSuccess(60));
-    }
+    };
 }

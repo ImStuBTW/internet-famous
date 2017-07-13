@@ -106,14 +106,11 @@ body {
     flex: 0 1 auto;
 
     h2 {
-        height: 33px;
-        span {
-            height: 33px;
-        }
+        margin-top: 1px;
     }
 
-    .pause {
-        height: 33px;
+    .pause .glyphicon {
+        top: 3px;
     }
 
     width: 50%;
