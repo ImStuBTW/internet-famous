@@ -4,10 +4,16 @@ import {bindActionCreators} from 'redux';
 import PropTypes from 'prop-types';
 import * as gameActions from '../../actions/gameActions';
 import * as roundActions from '../../actions/roundActions';
+import * as timerActions from '../../actions/timerActions';
+import * as pauseActions from '../../actions/pauseActions';
+import * as deckActions from '../../actions/deckActions';
+import * as cardActions from '../../actions/cardActions';
 import Card from '../card/Card';
 import Cards from '../card/Cards';
 import CardWrapper from '../core/CardWrapper';
 import QuickIntro from './QuickIntro';
+import QuickPass from './QuickPass';
+import QuickPause from './QuickPause';
 import Transition from 'react-motion-ui-pack';
 import { spring } from 'react-motion';
 
@@ -29,10 +35,13 @@ class Game extends React.Component {
 
     startGame() {
         this.props.actions.startGame();
+        this.props.actions.randomDeck();
+        this.props.actions.nextCard();
     }
 
     startRound() {
         this.props.actions.startRound();
+        this.props.actions.timerStart();
     }
     render() {
         const pageLetter = this.props.card[0];
@@ -55,14 +64,61 @@ class Game extends React.Component {
                 enter={{opacity: spring(1, { stiffness: 330, damping: 30 }), translateX: spring(0, { stiffness: 330, damping: 30 })}}
                 leave={{opacity: spring(0, { stiffness: 330, damping: 30 }), translateX: spring(-100, { stiffness: 330, damping: 30 })}}
             >
-            {!this.props.inRound ?
-                <CardWrapper key={'QuickIntro'} cardStyle={this.props.style}>
-                    <QuickIntro />
-                </CardWrapper>
-            :
-                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
-                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
-                </CardWrapper>
+            {
+                (
+                    () => {
+                        if(this.props.isPaused) {
+                            return (
+                                <CardWrapper key={'Pause'} cardStyle={this.props.style}>
+                                    <QuickPause />
+                                </CardWrapper>
+                            );
+                        }
+                        else {
+                            switch(this.props.phase) {
+                                case 0 :
+                                    return (
+                                        <CardWrapper key={'QuickIntro'} cardStyle={this.props.style}>
+                                            <QuickIntro />
+                                        </CardWrapper>
+                                    );
+                                case 1 :
+                                    if(this.props.redTeam) {
+                                        if(this.props.inRound) {
+                                            return (
+                                                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
+                                                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
+                                                </CardWrapper>
+                                            );
+                                        }
+                                        else {
+                                            return (
+                                                <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                    <QuickPass />
+                                                </CardWrapper>
+                                            );
+                                        }
+                                    }
+                                    else {
+                                        if(this.props.inRound) {
+                                            return (
+                                                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
+                                                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
+                                                </CardWrapper>
+                                            );
+                                        }
+                                        else {
+                                            return (
+                                                <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                    <QuickPass />
+                                                </CardWrapper>
+                                            );
+                                        }
+                                    }
+                            }
+                        }
+                    }
+                )()
             }
             </Transition>
         );
@@ -73,20 +129,25 @@ Game.propTypes = {
     style: PropTypes.object,
     card: PropTypes.string.isRequired,
     actions: PropTypes.object.isRequired,
-    inRound: PropTypes.bool.isRequired
+    inRound: PropTypes.bool.isRequired,
+    phase: PropTypes.number.isRequired,
+    redTeam: PropTypes.bool.isRequired,
+    isPaused: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
         card: state.card,
         inRound: state.inRound,
-        phase: state.phase
+        phase: state.phase,
+        redTeam: state.redTeam,
+        isPaused: state.isPaused
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, gameActions, roundActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, gameActions, roundActions, timerActions, pauseActions, deckActions, cardActions), dispatch)
     };
 }
 

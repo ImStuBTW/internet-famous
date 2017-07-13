@@ -7,6 +7,7 @@ import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
 import * as phaseActions from '../../actions/phaseActions';
 import * as roundActions from '../../actions/roundActions';
+import * as timerActions from '../../actions/timerActions';
 
 class QuickIntro extends React.Component {
     constructor(props, context) {
@@ -18,6 +19,7 @@ class QuickIntro extends React.Component {
     begin() {
         this.props.actions.nextPhase();
         this.props.actions.startRound();
+        this.props.actions.timerStart();
     }
 
     render() {
@@ -53,7 +55,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, phaseActions, roundActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, phaseActions, roundActions, timerActions), dispatch)
     };
 }
 

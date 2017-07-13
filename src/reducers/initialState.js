@@ -8,5 +8,6 @@ export default {
     redScore: 0,
     card: 'a1',
     phase: 0,
-    timerValue: 60
+    timerValue: 10,
+    deck: ['a1','a2','a3', 'a4']
 };
