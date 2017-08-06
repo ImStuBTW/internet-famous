@@ -4,20 +4,6 @@ const purple = '#7e6299';
 const red = '#e14644';
 
 export default {
-    template: {
-        title: '',
-        clue: '',
-        category: '',
-        score: '',
-        color: green
-    },
-    test: {
-            title: 'Abraham Lincoln',
-            clue: 'The 16th President of the US, who abolished slavery and led the North to victory in the Civil War. He is often depicted wearing a top hat with his signiture chin curtain beard. He was assassinated by the actor John Wilkes Booth while attending a party at Fords Theatre.',
-            category: 'HISTORICAL FIGURE',
-            score: '1',
-            color: green
-    },
     // Page 2
     a1: {
         title: 'Doge',
@@ -106,7 +92,7 @@ export default {
     },
     b4: {
         title: 'Pablo Escobar',
-        clue: 'A Colombian drug lored and "King of Cocaine," who at his peak trafficked 15 tons of the drug into the US per year. He was killed by authorities in a firefight in Medellin. According to a recent BBC report, a number of hippos from his menagerie still roam the Colombian countryside.',
+        clue: 'A Colombian drug lord and "King of Cocaine," who at his peak trafficked 15 tons of the drug into the US per year. He was killed by authorities in a firefight in Medellin. According to a recent BBC report, a number of hippos from his menagerie still roam the Colombian countryside.',
         category: 'HISTORICAL FIGURE',
         score: '3',
         color: purple

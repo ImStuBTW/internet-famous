@@ -7,10 +7,10 @@ import pause from './pauseReducer';
 import team from './teamReducer';
 import redScore from './redScoreReducer';
 import blueScore from './blueScoreReducer';
-import card from './cardReducer';
 import phase from './phaseReducer';
 import timer from './timerReducer';
 import deck from './deckReducer';
+import remainingCards from './remainingCardsReducer';
 
 const rootReducer = combineReducers({
     routing: routerReducer,
@@ -21,10 +21,10 @@ const rootReducer = combineReducers({
     redTeam: team,
     redScore: redScore,
     blueScore: blueScore,
-    card: card,
     phase: phase,
     timerValue: timer,
-    deck: deck
+    deck: deck,
+    remainingCards: remainingCards
 });
 
 export default rootReducer;

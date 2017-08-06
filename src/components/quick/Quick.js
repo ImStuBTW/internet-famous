@@ -6,8 +6,9 @@ import * as gameActions from '../../actions/gameActions';
 import * as roundActions from '../../actions/roundActions';
 import * as timerActions from '../../actions/timerActions';
 import * as pauseActions from '../../actions/pauseActions';
+import * as phaseActions from '../../actions/phaseActions';
 import * as deckActions from '../../actions/deckActions';
-import * as cardActions from '../../actions/cardActions';
+import * as remainingCardsActions from '../../actions/remainingCardsActions';
 import Card from '../card/Card';
 import Cards from '../card/Cards';
 import CardWrapper from '../core/CardWrapper';
@@ -17,7 +18,7 @@ import QuickPause from './QuickPause';
 import Transition from 'react-motion-ui-pack';
 import { spring } from 'react-motion';
 
-class Game extends React.Component {
+class Quick extends React.Component {
     constructor(props, context) {
         super(props, context);
 
@@ -36,7 +37,6 @@ class Game extends React.Component {
     startGame() {
         this.props.actions.startGame();
         this.props.actions.randomDeck();
-        this.props.actions.nextCard();
     }
 
     startRound() {
@@ -44,16 +44,13 @@ class Game extends React.Component {
         this.props.actions.timerStart();
     }
     render() {
-        const pageLetter = this.props.card[0];
-        const cardNumber = this.props.card[1];
-
         const card = {
-            title: Cards[pageLetter + cardNumber].title,
-            clue: Cards[pageLetter + cardNumber].clue,
-            category: Cards[pageLetter + cardNumber].category,
-            categoryStyle: {color: Cards[pageLetter + cardNumber].color},
-            score: Cards[pageLetter + cardNumber].score,
-            scoreStyle: {background: Cards[pageLetter + cardNumber].color}
+            title: Cards[this.props.remainingCards[0]].title,
+            clue: Cards[this.props.remainingCards[0]].clue,
+            category: Cards[this.props.remainingCards[0]].category,
+            categoryStyle: {color: Cards[this.props.remainingCards[0]].color},
+            score: Cards[this.props.remainingCards[0]].score,
+            scoreStyle: {background: Cards[this.props.remainingCards[0]].color}
         };
 
         return (
@@ -86,8 +83,8 @@ class Game extends React.Component {
                                     if(this.props.redTeam) {
                                         if(this.props.inRound) {
                                             return (
-                                                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
-                                                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
+                                                <CardWrapper key={'CardWrapper-' + this.props.remainingCards[0]} cardStyle={this.props.style}>
+                                                    <Card key={'Card-' + this.props.remainingCards[0]} card={card} />
                                                 </CardWrapper>
                                             );
                                         }
@@ -102,8 +99,8 @@ class Game extends React.Component {
                                     else {
                                         if(this.props.inRound) {
                                             return (
-                                                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
-                                                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
+                                                <CardWrapper key={'CardWrapper-' + this.props.remainingCards[0]} cardStyle={this.props.style}>
+                                                    <Card key={'Card-' + this.props.remainingCards[0]} card={card} />
                                                 </CardWrapper>
                                             );
                                         }
@@ -115,6 +112,12 @@ class Game extends React.Component {
                                             );
                                         }
                                     }
+                                case 2:
+                                    return (
+                                        <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                            <h1>Deck Empty</h1>
+                                        </CardWrapper>
+                                    );
                             }
                         }
                     }
@@ -125,9 +128,9 @@ class Game extends React.Component {
     }
 }
 
-Game.propTypes = {
+Quick.propTypes = {
     style: PropTypes.object,
-    card: PropTypes.string.isRequired,
+    remainingCards: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired,
     inRound: PropTypes.bool.isRequired,
     phase: PropTypes.number.isRequired,
@@ -137,7 +140,7 @@ Game.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        card: state.card,
+        remainingCards: state.remainingCards,
         inRound: state.inRound,
         phase: state.phase,
         redTeam: state.redTeam,
@@ -147,8 +150,8 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, gameActions, roundActions, timerActions, pauseActions, deckActions, cardActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, gameActions, roundActions, phaseActions, timerActions, pauseActions, deckActions, remainingCardsActions), dispatch)
     };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Game);
+export default connect(mapStateToProps, mapDispatchToProps)(Quick);

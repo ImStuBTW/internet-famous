@@ -32,16 +32,13 @@ class Game extends React.Component {
     }
 
     render() {
-        const pageLetter = this.props.card[0];
-        const cardNumber = this.props.card[1];
-
         const card = {
-            title: Cards[pageLetter + cardNumber].title,
-            clue: Cards[pageLetter + cardNumber].clue,
-            category: Cards[pageLetter + cardNumber].category,
-            categoryStyle: {color: Cards[pageLetter + cardNumber].color},
-            score: Cards[pageLetter + cardNumber].score,
-            scoreStyle: {background: Cards[pageLetter + cardNumber].color}
+            title: Cards[this.props.deck[0]].title,
+            clue: Cards[this.props.deck[0]].clue,
+            category: Cards[this.props.deck[0]].category,
+            categoryStyle: {color: Cards[this.props.deck[0]].color},
+            score: Cards[this.props.deck[0]].score,
+            scoreStyle: {background: Cards[this.props.deck[0]].color}
         };
 
         return (
@@ -53,8 +50,8 @@ class Game extends React.Component {
                 leave={{opacity: spring(0, { stiffness: 330, damping: 30 }), translateX: spring(-100, { stiffness: 330, damping: 30 })}}
             >
 
-                <CardWrapper key={'CardWrapper-' + pageLetter + cardNumber} cardStyle={this.props.style}>
-                    <Card key={'Card-' + pageLetter + cardNumber} card={card} />
+                <CardWrapper key={'CardWrapper-' + this.props.deck[0]} cardStyle={this.props.style}>
+                    <Card key={'Card-' + this.props.deck[0]} card={card} />
                 </CardWrapper>
 
             </Transition>
@@ -64,13 +61,13 @@ class Game extends React.Component {
 
 Game.propTypes = {
     style: PropTypes.object,
-    card: PropTypes.string.isRequired,
+    deck: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
     return {
-        card: state.card
+        deck: state.deck
     };
 }
 
