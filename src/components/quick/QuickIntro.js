@@ -18,8 +18,6 @@ class QuickIntro extends React.Component {
 
     begin() {
         this.props.actions.nextPhase();
-        this.props.actions.startRound();
-        this.props.actions.timerStart();
     }
 
     render() {

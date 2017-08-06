@@ -9,5 +9,6 @@ export default {
     phase: 0,
     timerValue: 10,
     deck: ['a1','a2','a3', 'a4'],
-    remainingCards: ['b1', 'b2', 'b3', 'b4']
+    remainingCards: ['b1', 'b2', 'b3', 'b4'],
+    instructions: false
 };

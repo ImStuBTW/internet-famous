@@ -29,10 +29,8 @@ class Footer extends React.Component {
         }
         this.props.actions.scoreCard();
         if(this.props.remainingCards.length === 1) {
-            this.props.actions.loadAndShuffleCards();
             this.props.actions.timerStop();
             this.props.actions.timerReset();
-            this.props.actions.nextPhase();
             this.props.actions.endRound();
         }
     }
@@ -82,7 +80,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions, deckActions, phaseActions, remainingCards, timerActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions, deckActions, phaseActions, remainingCards, timerActions, roundActions), dispatch)
     };
 }
 

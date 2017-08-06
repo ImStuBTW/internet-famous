@@ -8,11 +8,14 @@ import * as timerActions from '../../actions/timerActions';
 import * as pauseActions from '../../actions/pauseActions';
 import * as phaseActions from '../../actions/phaseActions';
 import * as deckActions from '../../actions/deckActions';
+import * as instructionsActions from '../../actions/instructionsActions';
 import * as remainingCardsActions from '../../actions/remainingCardsActions';
 import Card from '../card/Card';
 import Cards from '../card/Cards';
 import CardWrapper from '../core/CardWrapper';
 import QuickIntro from './QuickIntro';
+import QuickInstructions from './QuickInstructions';
+import QuickScore from './QuickScore';
 import QuickPass from './QuickPass';
 import QuickPause from './QuickPause';
 import Transition from 'react-motion-ui-pack';
@@ -44,7 +47,9 @@ class Quick extends React.Component {
         this.props.actions.timerStart();
     }
     render() {
-        const card = {
+        let card = {};
+        if(this.props.remainingCards.length != 0) {
+        card = {
             title: Cards[this.props.remainingCards[0]].title,
             clue: Cards[this.props.remainingCards[0]].clue,
             category: Cards[this.props.remainingCards[0]].category,
@@ -52,6 +57,7 @@ class Quick extends React.Component {
             score: Cards[this.props.remainingCards[0]].score,
             scoreStyle: {background: Cards[this.props.remainingCards[0]].color}
         };
+        }
 
         return (
             <Transition
@@ -64,6 +70,7 @@ class Quick extends React.Component {
             {
                 (
                     () => {
+                        // Always show the pause screen if the game is paused.
                         if(this.props.isPaused) {
                             return (
                                 <CardWrapper key={'Pause'} cardStyle={this.props.style}>
@@ -71,8 +78,10 @@ class Quick extends React.Component {
                                 </CardWrapper>
                             );
                         }
+                        // Otherwise, show the phase-specific cards.
                         else {
                             switch(this.props.phase) {
+                                // Game Rules
                                 case 0 :
                                     return (
                                         <CardWrapper key={'QuickIntro'} cardStyle={this.props.style}>
@@ -80,23 +89,17 @@ class Quick extends React.Component {
                                         </CardWrapper>
                                     );
                                 case 1 :
-                                    if(this.props.redTeam) {
-                                        if(this.props.inRound) {
-                                            return (
-                                                <CardWrapper key={'CardWrapper-' + this.props.remainingCards[0]} cardStyle={this.props.style}>
-                                                    <Card key={'Card-' + this.props.remainingCards[0]} card={card} />
-                                                </CardWrapper>
-                                            );
-                                        }
-                                        else {
-                                            return (
-                                                <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
-                                                    <QuickPass />
-                                                </CardWrapper>
-                                            );
-                                        }
+                                    if(!this.props.instructions) {
+                                        // Show Initial Round Instruction Card
+                                        return (
+                                            <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                <QuickInstructions />
+                                            </CardWrapper>
+                                        );
                                     }
                                     else {
+                                        // Otherwise, it's in the game.
+                                        // If it's in round, show a card.
                                         if(this.props.inRound) {
                                             return (
                                                 <CardWrapper key={'CardWrapper-' + this.props.remainingCards[0]} cardStyle={this.props.style}>
@@ -105,17 +108,28 @@ class Quick extends React.Component {
                                             );
                                         }
                                         else {
-                                            return (
-                                                <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
-                                                    <QuickPass />
-                                                </CardWrapper>
-                                            );
+                                            if(this.props.remainingCards.length != 0) {
+                                                //Show Pass Card
+                                                return (
+                                                    <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                        <QuickPass />
+                                                    </CardWrapper>
+                                                );
+                                            }
+                                            else {
+                                                // Show End Instruction Card / Score Card
+                                                return (
+                                                    <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                        <QuickScore />
+                                                    </CardWrapper>
+                                                );
+                                            }
                                         }
                                     }
                                 case 2:
                                     return (
                                         <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
-                                            <h1>Deck Empty</h1>
+                                            <QuickInstructions />
                                         </CardWrapper>
                                     );
                             }
@@ -135,7 +149,8 @@ Quick.propTypes = {
     inRound: PropTypes.bool.isRequired,
     phase: PropTypes.number.isRequired,
     redTeam: PropTypes.bool.isRequired,
-    isPaused: PropTypes.bool.isRequired
+    isPaused: PropTypes.bool.isRequired,
+    instructions: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
@@ -144,13 +159,14 @@ function mapStateToProps(state, ownProps) {
         inRound: state.inRound,
         phase: state.phase,
         redTeam: state.redTeam,
-        isPaused: state.isPaused
+        isPaused: state.isPaused,
+        instructions: state.instructions
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, gameActions, roundActions, phaseActions, timerActions, pauseActions, deckActions, remainingCardsActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, gameActions, roundActions, phaseActions, timerActions, pauseActions, deckActions, remainingCardsActions, instructionsActions), dispatch)
     };
 }
 

@@ -11,6 +11,7 @@ import phase from './phaseReducer';
 import timer from './timerReducer';
 import deck from './deckReducer';
 import remainingCards from './remainingCardsReducer';
+import instructions from './instructionsReducer';
 
 const rootReducer = combineReducers({
     routing: routerReducer,
@@ -24,7 +25,8 @@ const rootReducer = combineReducers({
     phase: phase,
     timerValue: timer,
     deck: deck,
-    remainingCards: remainingCards
+    remainingCards: remainingCards,
+    instructions: instructions
 });
 
 export default rootReducer;
