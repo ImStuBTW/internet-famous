@@ -305,21 +305,21 @@ export default {
     },
     e7: {
         title: 'Charlton Heston',
-        clue: '',
+        clue: 'An actor and PResident of the NRA, who starred in such films as The Ten Commandments, The Omega Man, and Planet of the Apes, where he was known for lines such as "Take your stinking paws off me you damn dirty apes!" He become a vociferous gun advocate in the 80s.',
         category: 'CELEBRITY',
         score: '1',
         color: green
     },
     e8: {
         title: 'Jacques Cousteau',
-        clue: '',
+        clue: 'A French conservationist and media figure, who devoted his life to the study of the ocean. Following his death, members of his crew alleged that scenes from his films were staged. For instance, pouring bleach into a container to get footage of an octopus scrambling out.',
         category: 'HISTORICAL FIGURE',
         score: '2',
         color: blue
     },
     e9: {
         title: 'Mr. Trololo',
-        clue: '',
+        clue: 'The internet moniker of Eduard Khil, a Russian singer who became famous when his 1976 recording of "I Am Glad, \'Cuase I\'m Finally Returning Back Home" was uploaded to YouTube. Khil performs the song using nonsense syllables rather than the lyrics.',
         category: 'CELEBRITY',
         score: '4',
         color: red
@@ -327,65 +327,385 @@ export default {
     //Page 7
     f1: {
         title: 'Evander Holyfield\'s Ear',
-        clue: '',
+        clue: 'The hearing organ of the 4-time heavyweight champion boxer. It was partially torn off during a 1997 bout with Mike Tyson that is now known as "The Bite Fight." In Round 3, Tyson bit into its outer rim with his teeth before spitting the piece of flesh onto the canvas.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     f2: {
         title: 'Hondor',
-        clue: '',
+        clue: 'Winterfell\'s stableboy in George R.R. Matrin\'s A Song of Ice and Fire and the Game of Thrones TV adaptation. He carries the crippled Bran Stark around in a large basket. Though his real name is Walder, he is only referred to by this name, since it is the only word he ever uses.',
         category: 'FICTIONAL CHARACTER',
         score: '3',
         color: purple
     },
     f3: {
         title: 'A Communist',
-        clue: '',
+        clue: 'A member of the political movement that believes in the common ownership of the means of production. The concept was first developed by the German political philosopher Karl Marx and became the national ideology of the Soviet Union in the 20th century.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     f4: {
         title: 'Khalid Sheikh Mohammed',
-        clue: '',
+        clue: 'A terrorist known variously as the "principal architect of the 9/11 attacks" by the 9/11 Commission and "Ron Jeremy in a pillowcase" by Horatio Sanz. An engineer by training, he designed a vacuum cleaner while being held at a secret CIA detention facility in Poland.',
         category: 'HISTORICAL FIGURE',
         score: '2',
         color: blue
     },
     f5: {
         title: 'The 99%',
-        clue: '',
+        clue: 'A category inspired by the political slogans of the Occupy Wall Street movement of 2011 that classified the majority of US citizens who are not members of the economic elite. According to the IRS, all individuals earning less than $343,927 fall into this category.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     f6: {
         title: 'Richard Pryor',
-        clue: '',
+        clue: 'A commedian once described by Jerry Seinfeld as "the Picasso of our profession," who was famous for his open discussion of race. In a well-known incident, while freebasing cocaine, he poured 151-proof rum over his body, lit a match, and ran down the street on fire.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     f7: {
         title: 'Rosa Parks',
-        clue: '',
+        clue: 'A civil rights activist who refused to give up her seat in the colored section of a bus to a white passanger. Claudette Colvin had done the same nine months earlier, but NAACP leadership did not want a pregnant, unmarried teenager as the face of the movement.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     f8: {
         title: 'An Illusionist',
-        clue: '',
+        clue: 'A performer of magic acts that often include demonstrating "impossible" tricks to a credulous audience. The term was preferred by the character Gob Bluth in the television series Arrested Development, whose performances often went horribly wrong.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     f9: {
         title: 'A Castrato',
+        clue: 'A male vocal performer who has an abnormally high vocal register, typically achived by neutering the performer before puberty. There are totay some "natural" performers with hormonal anomalies that give the same effect. The last castration for this occurred in the 1870s.',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    //Page 8
+    g1: {
+        title: 'A Baby Sloth',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    g2: {
+        title: 'Kurt Cobain',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    g3: {
+        title: 'Tonya Harding',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    g4: {
+        title: 'A Mole',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    g5: {
+        title: 'Prince',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    g6: {
+        title: 'A Beard',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    g7: {
+        title: 'God',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    g8: {
+        title: 'The lady who spilled coffee on herself at McDonalds',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    g9: {
+        title: 'Anne Frank',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    //Page 9
+    h1: {
+        title: 'Deep Blue',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    h2: {
+        title: 'Pee-wee Herman',
+        clue: '',
+        category: 'CARD BY EMMA KOENIG',
+        score: '1',
+        color: green
+    },
+    h3: {
+        title: 'An Oompa Loompa',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    h4: {
+        title: 'Rapunzel',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    h5: {
+        title: 'Pac-Man',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    h6: {
+        title: 'Godzilla',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    h7: {
+        title: 'Man Hands',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    h8: {
+        title: 'John Wilkes Booth',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    h9: {
+        title: 'The Very Hungry Caterpillar',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    //Page 10
+    i1: {
+        title: 'A Human Centipede',
         clue: '',
         category: 'ET CETERA',
         score: '3',
         color: purple
+    },
+    i2: {
+        title: 'Amelia Earhart',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    i3: {
+        title: 'Vincent van Gogh',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    i4: {
+        title: 'Abraham Lincoln',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    i5: {
+        title: 'Mr. Owl',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    i6: {
+        title: 'A Grammer Nazi',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    i7: {
+        title: 'Yoshi',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    i8: {
+        title: 'Hannibal Lector',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    i9: {
+        title: 'A Centaur',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    //Page 11
+    j1: {
+        title: 'Dr. Henry Heimlich',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    j2: {
+        title: 'The Shoe Comber (Richard Reid)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    j3: {
+        title: 'Slimber',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    j4: {
+        title: 'Magic Mike',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    j5: {
+        title: 'Drunk Jeff Goldblum',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    j6: {
+        title: 'Princess Di',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    j7: {
+        title: 'The Raven',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    j8: {
+        title: 'The Loch Ness Monster',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    j9: {
+        title: 'Teddy Ruxpin',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    //Page 12
+    k1: {
+        title: 'Rosemary\'s Baby',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    k2: {
+        title: 'Your Mom',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    k3: {
+        title: 'The Swedish Chef',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    k4: {
+        title: 'The Eye of Sauron',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    k5: {
+        title: 'Bubble Boy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    k6: {
+        title: 'Bloody Mary',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    k7: {
+        title: 'Colonel Sanders',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    k8: {
+        title: 'O.J. Simpson',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    k9: {
+        title: 'The Hamburglar',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
     }
 };
