@@ -14,6 +14,7 @@ import Card from '../card/Card';
 import Cards from '../card/Cards';
 import CardWrapper from '../core/CardWrapper';
 import QuickIntro from './QuickIntro';
+import QuickOutro from './QuickOutro';
 import QuickInstructions from './QuickInstructions';
 import QuickScore from './QuickScore';
 import QuickPass from './QuickPass';
@@ -89,6 +90,8 @@ class Quick extends React.Component {
                                         </CardWrapper>
                                     );
                                 case 1 :
+                                case 2 :
+                                case 3 :
                                     if(!this.props.instructions) {
                                         // Show Initial Round Instruction Card
                                         return (
@@ -99,8 +102,8 @@ class Quick extends React.Component {
                                     }
                                     else {
                                         // Otherwise, it's in the game.
-                                        // If it's in round, show a card.
                                         if(this.props.inRound) {
+                                            // If it's in round, show a card.
                                             return (
                                                 <CardWrapper key={'CardWrapper-' + this.props.remainingCards[0]} cardStyle={this.props.style}>
                                                     <Card key={'Card-' + this.props.remainingCards[0]} card={card} />
@@ -109,7 +112,7 @@ class Quick extends React.Component {
                                         }
                                         else {
                                             if(this.props.remainingCards.length != 0) {
-                                                //Show Pass Card
+                                                // If it's out of a round but there are cards left, show the pass screen.
                                                 return (
                                                     <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
                                                         <QuickPass />
@@ -117,19 +120,20 @@ class Quick extends React.Component {
                                                 );
                                             }
                                             else {
-                                                // Show End Instruction Card / Score Card
+                                                // If the time's up and there's no cards left, show the end score screen.
                                                 return (
-                                                    <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
+                                                    <CardWrapper key={'QuickScore'} cardStyle={this.props.style}>
                                                         <QuickScore />
                                                     </CardWrapper>
                                                 );
                                             }
                                         }
                                     }
-                                case 2:
+                                default :
+                                    // End game card.
                                     return (
-                                        <CardWrapper key={'QuickPass'} cardStyle={this.props.style}>
-                                            <QuickInstructions />
+                                        <CardWrapper key={'QuickOutro'} cardStyle={this.props.style}>
+                                            <QuickOutro />
                                         </CardWrapper>
                                     );
                             }

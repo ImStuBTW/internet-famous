@@ -37,7 +37,7 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
                         </div>
                         <div className="menu-section instructions-bottom">
-                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">Red Team: Go!</a></FitText>
+                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
                         </div>
                     </div>
                 );
@@ -53,7 +53,7 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
                         </div>
                         <div className="menu-section instructions-bottom">
-                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">Red Team: Go!</a></FitText>
+                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
                         </div>
                     </div>
                 );
@@ -69,7 +69,7 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
                         </div>
                         <div className="menu-section instructions-bottom">
-                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">Red Team: Go!</a></FitText>
+                            <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
                         </div>
                     </div>
                 );
@@ -95,7 +95,8 @@ QuickInstructions.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return {
-        phase: state.phase
+        phase: state.phase,
+        redTeam: state.redTeam
     };
 }
 

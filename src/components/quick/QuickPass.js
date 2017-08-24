@@ -35,7 +35,7 @@ class QuickIntro extends React.Component {
                     <FitText compressor={2}><p>When you've passed the phone, press the Switch Teams button.</p></FitText>
                 </div>
                 <div className="menu-section intro-bottom">
-                    <FitText compressor={1.6}><a onClick={this.pass} role="button" className="btn btn-primary btn-lg btn-block">Switch Teams</a></FitText>
+                    <FitText compressor={1.6}><a onClick={this.pass} role="button" className="btn btn-primary btn-lg btn-block">Pass Me To {!this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}</a></FitText>
                 </div>
             </div>
         );

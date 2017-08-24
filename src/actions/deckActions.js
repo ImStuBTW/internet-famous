@@ -10,7 +10,7 @@ export function randomDeck() {
     return dispatch => {
         let keys = Object.keys(Cards);
         let newDeck = [];
-        for(let i=0; i<40; i++) {
+        for(let i=0; i<10; i++) {
             // Push a random card onto newDeck by splicing one card at random from between 0 and the length of keys.
             newDeck.push(keys.splice(Math.random()*keys.length, 1)[0]);
         }
