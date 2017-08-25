@@ -27,7 +27,7 @@ class QuickOutro extends React.Component {
                     <FitText compressor={0.8}><h2>It's over!</h2></FitText>
                 </div>
                 <div className="menu-section intro-middle">
-                    <FitText compressor={2}><p></p></FitText>
+                    <FitText compressor={2}><p>Gasp!</p></FitText>
                 </div>
                 <div className="menu-section intro-bottom">
                     <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">Go Home.</a></FitText>

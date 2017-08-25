@@ -32,9 +32,7 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={0.8}><h2>Round 1 Instructions</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
-                            <FitText compressor={2}><p>Divide your friends into two groups: The <span className="red-team">Red Team</span> and the <span className="blue-team">Blue Team</span>. <span className="red-team">Red</span>'s going first.</p></FitText>
-                            <FitText compressor={2}><p>Give a person on the <span className="red-team">Red Team</span> the phone. When they press go, they'll have sixty seconds to get their team to guess as many card names as possible from the deck by giving clues to the person or thing's identity. There's no limit to the number of guesses, but they can't say any part of the card's name. Skipping cards is encouraged.</p></FitText>
-                            <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
+                            <FitText compressor={2}><p>You can use any words, sounds, or gestures except the card name itself. You're free to use any part of the clue text if you'd like. If you say any part of the name, you have to skip that card this turn.</p></FitText>
                         </div>
                         <div className="menu-section instructions-bottom">
                             <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
@@ -48,10 +46,8 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={0.8}><h2>Round 2 Instructions</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
-                            <FitText compressor={2}><p>Divide your friends into two groups: The <span className="red-team">Red Team</span> and the <span className="blue-team">Blue Team</span>. <span className="red-team">Red</span>'s going first.</p></FitText>
-                            <FitText compressor={2}><p>Give a person on the <span className="red-team">Red Team</span> the phone. When they press go, they'll have sixty seconds to get their team to guess as many card names as possible from the deck by giving clues to the person or thing's identity. There's no limit to the number of guesses, but they can't say any part of the card's name. Skipping cards is encouraged.</p></FitText>
-                            <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
-                        </div>
+                            <FitText compressor={2}><p>Use only one word, which can be anything except the name itself. You can repeat that word as many times as you like, but no sounds or gestures.</p></FitText>
+                            </div>
                         <div className="menu-section instructions-bottom">
                             <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
                         </div>
@@ -64,10 +60,8 @@ class QuickInstructions extends React.Component {
                             <FitText compressor={0.8}><h2>Round 3 Instructions</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
-                            <FitText compressor={2}><p>Divide your friends into two groups: The <span className="red-team">Red Team</span> and the <span className="blue-team">Blue Team</span>. <span className="red-team">Red</span>'s going first.</p></FitText>
-                            <FitText compressor={2}><p>Give a person on the <span className="red-team">Red Team</span> the phone. When they press go, they'll have sixty seconds to get their team to guess as many card names as possible from the deck by giving clues to the person or thing's identity. There's no limit to the number of guesses, but they can't say any part of the card's name. Skipping cards is encouraged.</p></FitText>
-                            <FitText compressor={2}><p>After 60 seconds, the <span className="red-team">Red Team</span> will pass the phone over to the <span className="blue-team">Blue Team</span>, and they'll have 60 seconds to guess the remaining cards. This process will continue until there are no cards left.</p></FitText>
-                        </div>
+                            <FitText compressor={2}><p>Just charades. No words. Sound effects are OK.</p></FitText>
+                            </div>
                         <div className="menu-section instructions-bottom">
                             <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">{this.props.redTeam ? <span>Red Team</span> : <span>Blue Team</span>}: Go!</a></FitText>
                         </div>
@@ -90,7 +84,8 @@ class QuickInstructions extends React.Component {
 
 QuickInstructions.propTypes = {
     actions: PropTypes.object.isRequired,
-    phase: PropTypes.number.isRequired
+    phase: PropTypes.number.isRequired,
+    redTeam: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {

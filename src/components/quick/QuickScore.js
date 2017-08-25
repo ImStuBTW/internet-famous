@@ -53,7 +53,8 @@ class QuickScore extends React.Component {
 
 QuickScore.propTypes = {
     actions: PropTypes.object.isRequired,
-    phase: PropTypes.number.isRequired
+    phase: PropTypes.number.isRequired,
+    redTeam: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
