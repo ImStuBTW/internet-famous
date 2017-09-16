@@ -8,6 +8,12 @@ import * as phaseActions from '../../actions/phaseActions';
 import * as roundActions from '../../actions/roundActions';
 import * as timerActions from '../../actions/timerActions';
 import * as remainingCards from '../../actions/remainingCardsActions';
+import * as blueCardActions from '../../actions/blueCardActions';
+import * as bluePassActions from '../../actions/bluePassActions';
+import * as blueTempScoreActions from '../../actions/blueTempScoreActions';
+import * as redCardActions from '../../actions/redCardActions';
+import * as redPassActions from '../../actions/redPassActions';
+import * as redTempScoreActions from '../../actions/redTempScoreActions';
 import PropTypes from 'prop-types';
 import {Link, IndexLink} from 'react-router';
 import Cards from '../card/Cards';
@@ -23,11 +29,15 @@ class Footer extends React.Component {
     pass() {
         if(this.props.redTeam) {
             this.props.actions.addRed(parseInt(Cards[this.props.remainingCards[0]].score));
+            this.props.actions.addRedTempScore(parseInt(Cards[this.props.remainingCards[0]].score));
+            this.props.actions.addRedCard();
         }
         else {
             this.props.actions.addBlue(parseInt(Cards[this.props.remainingCards[0]].score));
+            this.props.actions.addBlueTempScore(parseInt(Cards[this.props.remainingCards[0]].score));
+            this.props.actions.addBlueCard();
         }
-        this.props.actions.scoreCard();
+        this.props.actions.scoreCard(); //???
         if(this.props.remainingCards.length === 1) {
             this.props.actions.timerStop();
             this.props.actions.timerReset();
@@ -36,6 +46,12 @@ class Footer extends React.Component {
     }
 
     fail() {
+        if(this.props.redTeam) {
+            this.props.actions.addRedPass();
+        }
+        else {
+            this.props.actions.addBluePass();
+        }
         this.props.actions.shiftCard();
     }
 
@@ -65,7 +81,14 @@ Footer.propTypes = {
     isPaused: PropTypes.bool.isRequired,
     redTeam: PropTypes.bool.isRequired,
     actions: PropTypes.object.isRequired,
-    remainingCards: PropTypes.array.isRequired
+    remainingCards: PropTypes.array.isRequired,
+    blueCard: PropTypes.number.isRequired,
+    bluePass: PropTypes.number.isRequired,
+    blueTempScore: PropTypes.number.isRequired,
+    redCard: PropTypes.number.isRequired,
+    redPass: PropTypes.number.isRequired,
+    redTempScore: PropTypes.number.isRequired
+
 };
 
 function mapStateToProps(state, ownProps) {
@@ -74,13 +97,19 @@ function mapStateToProps(state, ownProps) {
         inRound: state.inRound,
         isPaused: state.isPaused,
         redTeam: state.redTeam,
-        remainingCards: state.remainingCards
+        remainingCards: state.remainingCards,
+        blueCard: state.blueCard,
+        bluePass: state.bluePass,
+        blueTempScore: state.blueTempScore,
+        redCard: state.redCard,
+        redPass: state.redPass,
+        redTempScore: state.redTempScore
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions, deckActions, phaseActions, remainingCards, timerActions, roundActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, redScoreActions, blueScoreActions, deckActions, phaseActions, remainingCards, timerActions, roundActions, bluePassActions, blueCardActions, blueTempScoreActions, redPassActions, redCardActions, redTempScoreActions), dispatch)
     };
 }
 

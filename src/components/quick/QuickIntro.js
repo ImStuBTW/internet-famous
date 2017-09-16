@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
+import * as gameActions from '../../actions/gameActions';
 import * as phaseActions from '../../actions/phaseActions';
 import * as roundActions from '../../actions/roundActions';
 import * as timerActions from '../../actions/timerActions';
@@ -17,6 +18,7 @@ class QuickIntro extends React.Component {
     }
 
     begin() {
+        this.props.actions.startGame();
         this.props.actions.nextPhase();
     }
 
@@ -55,7 +57,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(Object.assign({}, phaseActions, roundActions, timerActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, gameActions, phaseActions, roundActions, timerActions), dispatch)
     };
 }
 

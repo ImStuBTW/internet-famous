@@ -383,3 +383,59 @@ text-shadow: 1px 1px 0px $ui-font-shadow;
         margin-bottom: 0px;
     }
 }
+
+//*******************//
+// Scoreboard Styles //
+//*******************//
+
+.scoreboard {
+    margin-bottom: 20px;
+}
+
+.scoreboard-row {
+    @extend .text-center;
+}
+
+.scoreboard-header {
+    @extend .text-center;
+    border: 2px solid #333;
+    border-bottom: none;
+    width: 35%;
+    display: inline-block;
+}
+
+.scoreboard-red-header {
+    background-color: $ui-red;
+    color: $ui-font-red;
+    margin-left: 12%;
+    margin-right: 3%;
+}
+
+.scoreboard-blue-header {
+    background-color: $ui-blue;
+    color: $ui-font-blue;
+    margin-right: 12%;
+    margin-left: 3%;
+}
+
+.scoreboard-score {
+    @extend .text-center;
+    border: 2px solid #333;
+    border-top: none;
+    width: 35%;
+    display: inline-block;
+}
+
+.scoreboard-red-score {
+    background-color: $ui-font-shadow-red;
+    color: $ui-font-red;
+    margin-left: 12%;
+    margin-right: 3%;
+}
+
+.scoreboard-blue-score {
+    background-color: $ui-font-shadow-blue;
+    color: $ui-font-blue;
+    margin-right: 12%;
+    margin-left: 3%;
+}

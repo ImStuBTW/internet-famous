@@ -10,5 +10,11 @@ export default {
     timerValue: 10,
     deck: ['a1','a2','a3', 'a4'],
     remainingCards: ['b1', 'b2', 'b3', 'b4'],
-    instructions: false
+    instructions: false,
+    redTempScore: 0,
+    redCard: 0,
+    redPass: 0,
+    blueTempScore: 0,
+    blueCard: 0,
+    bluePass: 0
 };

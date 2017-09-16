@@ -12,6 +12,12 @@ import timer from './timerReducer';
 import deck from './deckReducer';
 import remainingCards from './remainingCardsReducer';
 import instructions from './instructionsReducer';
+import redTempScore from './redTempScoreReducer';
+import redCard from './redCardReducer';
+import redPass from './redPassReducer';
+import blueTempScore from './blueTempScoreReducer';
+import blueCard from './blueCardReducer';
+import bluePass from './bluePassReducer';
 
 const rootReducer = combineReducers({
     routing: routerReducer,
@@ -26,7 +32,13 @@ const rootReducer = combineReducers({
     timerValue: timer,
     deck: deck,
     remainingCards: remainingCards,
-    instructions: instructions
+    instructions: instructions,
+    redTempScore: redTempScore,
+    redCard: redCard,
+    redPass: redPass,
+    blueTempScore: blueTempScore,
+    blueCard: blueCard,
+    bluePass: bluePass
 });
 
 export default rootReducer;
