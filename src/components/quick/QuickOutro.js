@@ -14,10 +14,15 @@ class QuickOutro extends React.Component {
         super(props, context);
 
         this.begin = this.begin.bind(this);
+        this.handleLink = this.handleLink.bind(this);
     }
 
     begin() {
         this.props.actions.nextPhase();
+    }
+
+    handleLink(path) {
+        this.props.push(path);
     }
 
     render() {
@@ -30,7 +35,7 @@ class QuickOutro extends React.Component {
                     <FitText compressor={2}><p>Gasp!</p></FitText>
                 </div>
                 <div className="menu-section intro-bottom">
-                    <FitText compressor={1.6}><a onClick={this.begin} role="button" className="btn btn-primary btn-lg btn-block">Go Home.</a></FitText>
+                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Home.</a></FitText>
                 </div>
             </div>
         );
@@ -38,6 +43,7 @@ class QuickOutro extends React.Component {
 }
 
 QuickOutro.propTypes = {
+    push: PropTypes.func.isRequired,
     actions: PropTypes.object.isRequired,
     phase: PropTypes.number.isRequired
 };
@@ -51,6 +57,7 @@ function mapStateToProps(state, ownProps) {
 
 function mapDispatchToProps(dispatch) {
     return {
+        push: bindActionCreators(push, dispatch),
         actions: bindActionCreators(Object.assign({}, phaseActions, roundActions, timerActions), dispatch)
     };
 }

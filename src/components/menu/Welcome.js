@@ -45,11 +45,11 @@ class Welcome extends React.Component {
                     <div className="menu-section menu-middle">
                         <FitText compressor={1.6}><a onClick={() => this.handleLink('/game')} role="button" className="btn btn-primary btn-lg btn-block">Start Full Game</a></FitText>
                         <FitText compressor={1.6}><a onClick={() => this.handleLink('/quick')} role="button" className="btn btn-default btn-lg btn-block">Quick Play</a></FitText>
-                        <FitText compressor={1.6}><a onClick={() => this.handleLink('/test')} role="button" className="btn btn-default btn-lg btn-block">Test Menu</a></FitText>
+                        {/* <FitText compressor={1.6}><a onClick={() => this.handleLink('/test')} role="button" className="btn btn-default btn-lg btn-block">Test Menu</a></FitText>*/}
                         <FitText compressor={1.6}><a onClick={() => this.handleLink('/about')} role="button" className="btn btn-default btn-lg btn-block">About Internet Famous</a></FitText>
                     </div>
                     <div className="menu-section menu-bottom">
-                        <FitText compressor={3}><p>Internet Famous is a Creative Commons BY-NC-SA 4.0 derivative of the card game Monikers. The name Monikers is a registered trademarked of Palm Court LLC. Internet Famous is unaffiliated with Monikers and Palm Court LLC.</p></FitText>
+                        <FitText compressor={3}><p>Pardon our mess! Internet Famous is still in active development. Feel free to check out the <a href="http://www.github.com/imstuartjones">Github page</a> for more information.</p></FitText>
                     </div>
                 </div>
             </CardWrapper>
