@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function blueCardReducer(state = initialState.blueCard, action) {
     switch(action.type) {
+        case types.INIT :
+            return 0;
         case types.ADD_BLUECARD_SUCCESS :
             return state+action.blueCard;
         case types.ZERO_BLUECARD_SUCCESS :

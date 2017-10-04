@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function timerReducer(state = initialState.timerValue, action) {
     switch(action.type) {
+        case types.INIT :
+            return 10;
         case types.TICK_SUCCESS :
             return state-action.timerValue;
         case types.TIMER_RESET_SUCCESS :

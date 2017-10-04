@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function testReducer(state = initialState.testValue, action) {
     switch(action.type) {
+        case types.INIT :
+            return 1;
         case types.ADD_TEST_SUCCESS :
             return state+action.testValue;
         default :

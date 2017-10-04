@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function redTempScoreReducer(state = initialState.redTempScore, action) {
     switch(action.type) {
+        case types.INIT :
+            return 0;
         case types.ADD_REDTEMPSCORE_SUCCESS :
             return state+action.redTempScore;
         case types.ZERO_REDTEMPSCORE_SUCCESS :

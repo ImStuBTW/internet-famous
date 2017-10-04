@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function bluePassReducer(state = initialState.bluePass, action) {
     switch(action.type) {
+        case types.INIT :
+            return 0;
         case types.ADD_BLUEPASS_SUCCESS :
             return state+action.bluePass;
         case types.ZERO_BLUEPASS_SUCCESS :

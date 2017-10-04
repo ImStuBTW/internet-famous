@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function remainingCardsReducer(state = initialState.remainingCards, action) {
     switch(action.type) {
+        case types.INIT :
+            return ['b1', 'b2', 'b3', 'b4'];
         case types.LOAD_CARDS_SUCCESS :
                 return action.remainingCards;
         case types.LOAD_AND_SHUFFLE_CARDS_SUCCESS :

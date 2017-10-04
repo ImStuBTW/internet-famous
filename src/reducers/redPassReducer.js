@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function redPassReducer(state = initialState.redPass, action) {
     switch(action.type) {
+        case types.INIT :
+            return 0;
         case types.ADD_REDPASS_SUCCESS :
             return state+action.redPass;
         case types.ZERO_REDPASS_SUCCESS :

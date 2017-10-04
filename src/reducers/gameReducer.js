@@ -3,6 +3,8 @@ import initialState from './initialState';
 
 export default function gameReducer(state = initialState.gameOn, action) {
     switch(action.type) {
+        case types.INIT :
+            return false;
         case types.START_GAME_SUCCESS :
             return true;
         case types.END_GAME_SUCCESS :

@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
 import * as EmojiOne from 'react-svg-emojione';
+import * as initActions from '../../actions/initActions';
 import * as phaseActions from '../../actions/phaseActions';
 import * as roundActions from '../../actions/roundActions';
 import * as timerActions from '../../actions/timerActions';
@@ -23,19 +24,24 @@ class QuickOutro extends React.Component {
     }
 
     handleLink(path) {
+        this.props.actions.init();
         this.props.push(path);
     }
 
     render() {
         let title = '';
+        let body = '';
         if(this.props.redScore === this.props.blueScore){
             title = <h2>It's a Tie!</h2>;
+            body = <FitText compressor={0.8}><h3 className="text-center">¯\_(ツ)_/¯</h3></FitText>;
         }
         else if(this.props.redScore > this.props.blueScore) {
             title = <h2 className="red-team">Congradulations Red Team!</h2>;
+            body = <EmojiOne.cake />;
         }
         else {
             title = <h2 className="blue-team">Congradulations Blue Team!</h2>;
+            body = <EmojiOne.cake />;
         }
         return (
             <div className="menu">
@@ -43,11 +49,10 @@ class QuickOutro extends React.Component {
                     <FitText compressor={0.8}>{title}</FitText>
                 </div>
                 <div className="menu-section intro-middle">
-                    <EmojiOne.cake />
+                    {body}
                 </div>
                 <div className="menu-section intro-bottom">
-                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-default btn-lg btn-block">Quick Play With Same Deck</a></FitText>
-                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-default btn-lg btn-block">Quick Play With New Deck</a></FitText>
+                    <FitText compressor={1.6}><a onClick={() => this.handleLink('/quick')} role="button" className="btn btn-default btn-lg btn-block">Start A New Quick Play</a></FitText>
                     <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Home</a></FitText>
                 </div>
             </div>
@@ -75,7 +80,7 @@ function mapStateToProps(state, ownProps) {
 function mapDispatchToProps(dispatch) {
     return {
         push: bindActionCreators(push, dispatch),
-        actions: bindActionCreators(Object.assign({}, phaseActions, roundActions, timerActions), dispatch)
+        actions: bindActionCreators(Object.assign({}, initActions, phaseActions, roundActions, timerActions), dispatch)
     };
 }
 

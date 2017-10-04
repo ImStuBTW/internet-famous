@@ -1,5 +1,7 @@
 export const ADD_TEST_SUCCESS = 'ADD_TEST_SUCCESS';
 
+export const INIT = 'INIT';
+
 export const START_GAME_SUCCESS = 'START_GAME_SUCCESS';
 export const END_GAME_SUCCESS = 'END_GAME_SUCCESS';
 

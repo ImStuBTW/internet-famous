@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function blueReducer(state = initialState.blueScore, action) {
     switch(action.type) {
+        case types.INIT :
+            return 0;
         case types.ADD_BLUE_SUCCESS :
             return state+action.blueScore;
         default :

@@ -4,6 +4,8 @@ import initialState from './initialState';
 
 export default function instructionsReducer(state = initialState.instructions, action) {
     switch(action.type) {
+        case types.INIT :
+            return false;
         case types.INSTRUCTIONS_DELIVERED_SUCCESS :
             return action.instructions;
         case types.INSTRUCTIONS_CLEARED_SUCCESS :
