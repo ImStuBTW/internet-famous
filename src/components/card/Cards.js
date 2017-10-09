@@ -707,5 +707,1266 @@ export default {
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
+    },
+    // Page 13
+    l1: {
+        title: 'A Leper',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    l2: {
+        title: 'Khan!',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    l3: {
+        title: 'The Kaiser',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    l4: {
+        title: 'A California Raisin',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    l5: {
+        title: 'A Hungry Hungry Hippo',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    l6: {
+        title: 'Aunt Jemima',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    l7: {
+        title: 'Jesus H. Christ',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    l8: {
+        title: 'The Kraken',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    l9: {
+        title: 'A TSA Agent',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    // Page 14
+    m1: {
+        title: 'A Cylon',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m2: {
+        title: 'Splinter',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m3: {
+        title: 'Babar',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m4: {
+        title: 'The Underwear Bomber',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    m5: {
+        title: 'Chun-Li',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m6: {
+        title: 'The T-1000',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m7: {
+        title: 'Cthulhu',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m8: {
+        title: 'A Muggle',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    m9: {
+        title: 'A Fainting Goat',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    // Page 15,
+    o1: {
+        title: 'Count Chocula',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    o2: {
+        title: 'Burning Man',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    o3: {
+        title: 'A Furby',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    o4: {
+        title: 'Paul Reubens',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    o5: {
+        title: 'A Sherpa',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    o6: {
+        title: 'El Niño',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    o7: {
+        title: 'Ceiling Cat',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    o8: {
+        title: 'The Yellow Power Ranger',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    o9: {
+        title: 'The one-armed dummer from Def Leppard',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    // Page 16
+    p1: {
+        title: 'Uncle Tom',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    p2: {
+        title: 'George Washington',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    p3: {
+        title: 'The Lord of Dance',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    p4: {
+        title: 'Goatse',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    p5: {
+        title: 'P.F. Chang',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    p6: {
+        title: 'Oedipus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    p7: {
+        title: 'A Bleeder',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    p8: {
+        title: 'A Roomba',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    p9: {
+        title: 'Teen Wolf',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    // Page 17
+    q1: {
+        title: 'Falkor',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    q2: {
+        title: 'The Trojan Horse',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    q3: {
+        title: 'A Bro',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    q4: {
+        title: 'Paula Deen',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    q5: {
+        title: 'Octomom (Nadya Suleman)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    q6: {
+        title: 'A Hoarder',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    q7: {
+        title: 'A Neanderthal',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    q8: {
+        title: 'Damien Hirst',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    q9: {
+        title: 'Deep Throat',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    // Page 18
+    r1: {
+        title: 'William Shatner',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    r2: {
+        title: 'The Tiger Mom',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    r3: {
+        title: 'Blackfish',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    r4: {
+        title: 'The Gerber Baby',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    r5: {
+        title: 'Poppin\' Fresh, the Pillsbury Dough Boy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    r6: {
+        title: 'Krang',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    r7: {
+        title: 'Humpty Dumpty',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    r8: {
+        title: 'A Drone',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    r9: {
+        title: 'Johannes Kepler',
+        clue: '',
+        category: 'CARD BY OLIVER ROTHSCHILD',
+        score: '4',
+        color: red
+    },
+    // Page 19,
+    s1: {
+        title: 'Joe Camel',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    s2: {
+        title: 'Free Willy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    s3: {
+        title: 'David Carradine',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    s4: {
+        title: 'Carlos Danger (Anthony Weiner)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    s5: {
+        title: 'John Hancock',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    s6: {
+        title: 'Joe Biden',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    s7: {
+        title: 'Kim Jong-il',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    s8: {
+        title: 'Mr. Rogers',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    s9: {
+        title: 'A Fetus',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    // Page 20
+    t1: {
+        title: 'Alex Trebek with a mustache',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    t2: {
+        title: 'Alex Trebek without a mustache',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    t3: {
+        title: 'A Virgin',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    t4: {
+        title: 'Crocodile Dundee',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    t5: {
+        title: 'The Kool-Aid Man',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    t6: {
+        title: 'Andrea Yates',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    t7: {
+        title: 'Josephine Baker',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    t8: {
+        title: 'Lance Armstrong',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    t9: {
+        title: 'John Henry',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    // Page 21
+    u1: {
+        title: 'Miss Piggy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    u2: {
+        title: 'Anthony Weiner',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    u3: {
+        title: 'A Lab Rat',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    u4: {
+        title: 'Tom Selleck\'s mustache',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    u5: {
+        title: 'A Close Talker',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    u6: {
+        title: 'Yoko Ono',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    u7: {
+        title: 'Roger Ebert',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    u8: {
+        title: 'Kevin Bacon',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    u9: {
+        title: 'A Gerbil',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    // Page 22
+    v1: {
+        title: 'The Shark from Jaws',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    v2: {
+        title: 'The Boogeyman',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    v3: {
+        title: 'Your Evil Twin',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    v4: {
+        title: 'A T. Rex',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    v5: {
+        title: 'Rip Van Winkle',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    v6: {
+        title: 'The Winklevii',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    v7: {
+        title: 'Colonel Mustard',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    v8: {
+        title: 'A Swinger',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    v9: {
+        title: 'Cesar Millan',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    // Page 23
+    w1: {
+        title: 'A Nutcracker',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    w2: {
+        title: 'Rick James',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    w3: {
+        title: 'Gene Wilder',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    w4: {
+        title: 'A Werewolf',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    w5: {
+        title: 'Bob Ross',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    w6: {
+        title: 'Thomas Kinkade',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    w7: {
+        title: 'A Planeteer',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '1',
+        color: green
+    },
+    w8: {
+        title: 'You',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    w9: {
+        title: 'Honey Boo Boo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    // Page 24,
+    x1: {
+        title: 'A Nihilist',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    x2: {
+        title: 'Phineas Gage',
+        clue: '',
+        category: 'CARD BY ASHER VOLLMER',
+        score: '4',
+        color: red
+    },
+    x3: {
+        title: 'Ricardo Montalbán',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    x4: {
+        title: 'A Redshirt',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    x5: {
+        title: 'David Attenborough',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    x6: {
+        title: 'A Catholic Priest',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    x7: {
+        title: 'The Id',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    x8: {
+        title: 'Yorick',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    x9: {
+        title: 'Jim Jones',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    // Page 25
+    y1: {
+        title: 'A Man from Nantucket',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    y2: {
+        title: 'Bobby Fisher',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    y3: {
+        title: 'Rob Ford',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    y4: {
+        title: 'Oskar Schindler',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    y5: {
+        title: 'Ouroboros',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    y6: {
+        title: 'Lot\'s Wife',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    y7: {
+        title: 'Catherine the Great',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    y8: {
+        title: 'Catherine the Great\'s Horse',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    y9: {
+        title: 'William Henry Harrison',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    // Page 26,
+    z1: {
+        title: 'A Horse-Sized Duck',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    z2: {
+        title: 'Jareth, the Goblin King',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    z3: {
+        title: 'A Dungeon Master',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    z4: {
+        title: 'Log Lady',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    z5: {
+        title: 'Tycho Brahe',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    z6: {
+        title: 'Cocaine Bear',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    z7: {
+        title: 'Baby Einstein',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    z8: {
+        title: 'Anita Hill',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    z9: {
+        title: 'A dog doing yoga',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    // Page 27
+    A1: {
+        title: 'A Streaker',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    A2: {
+        title: 'Robert Hamilton',
+        clue: '',
+        category: 'CARD BY RICHARD MAXFIELD',
+        score: '4',
+        color: red
+    },
+    A3: {
+        title: 'Dramatic Chipmunk',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    A4: {
+        title: 'Sting',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    A5: {
+        title: 'Priapus',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    A6: {
+        title: 'Your High School Gym Teacher',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    A7: {
+        title: 'The Nobel Savage',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    A8: {
+        title: 'Bartleby the Scrivener',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    A9: {
+        title: 'Grape Lady',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    // Page 28
+    B1: {
+        title: 'Pedobear',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    B2: {
+        title: 'Judas Iscariot',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    B3: {
+        title: 'Lolita',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    B4: {
+        title: 'Siri',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    B5: {
+        title: 'Silvio Berlusconi',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    B6: {
+        title: 'The Dread Pirate Roberts',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    B7: {
+        title: 'Harry Houdini',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    B8: {
+        title: 'The Sorcerer\'s Apprentice',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    B9: {
+        title: 'Honey Boo Boo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    // Page 29
+    C1: {
+        title: 'Koko',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    C2: {
+        title: 'The 800 Pound Gorilla',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    C3: {
+        title: 'Charizard',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    C4: {
+        title: 'Portnoy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    C5: {
+        title: 'The Boy Who Cried Wolf',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    C6: {
+        title: 'Roland the Farter, Flatulist to the King',
+        clue: '',
+        category: 'CARD BY MAX TEMKIN',
+        score: '4',
+        color: red
+    },
+    C7: {
+        title: 'Nicholas Georgiton',
+        clue: 'Hero or villian? Attorney or Presbyterian? All we know for sure is that he has internet access and $300 in disposable income.',
+        category: 'CARD BY NICHOLAS GEORGITON',
+        score: '4',
+        color: red
+    },
+    C8: {
+        title: 'A Civil War Reenactor',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    C9: {
+        title: 'Mia Hamm',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    // Page 30
+    D1: {
+        title: 'Dr. Quinn, Medicine Woman',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    D2: {
+        title: 'Captain Ahab',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    D3: {
+        title: 'Oprah\'s best friend (Gayle)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    D4: {
+        title: 'Skeletor',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    D5: {
+        title: 'Star Wars Kid',
+        clue: '',
+        category: 'CARD BY ANDY BAIO',
+        score: '3',
+        color: purple
+    },
+    D6: {
+        title: 'A Merman',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    D7: {
+        title: 'Montezuma',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    D8: {
+        title: 'A Damsel in Distress',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    D9: {
+        title: 'Clippy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    // Page 31
+    E1: {
+        title: 'The 1%',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    E2: {
+        title: 'Helen Keller',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    E3: {
+        title: 'A Mormon',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    E4: {
+        title: 'The Walrus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    E5: {
+        title: 'Robocop',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    E6: {
+        title: 'Betsy Ross',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    E7: {
+        title: 'Big Brother',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    E8: {
+        title: 'Tubgirl',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    E9: {
+        title: 'The Superego',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    // Page 32
+    F1: {
+        title: 'Frogger',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    F2: {
+        title: 'Conjoined Twins',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    F3: {
+        title: 'Comic Book Guy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
     }
+    // Page 33
+    // Page 34
+    // Page 35
+    // Page 36
+    // Page 37
+    // Page 38
+    // Page 39
+    // Page 40
+    // Page 41
+    // Page 42
+    // Page 43
+    // Page 44
+    // Page 45
+    // Page 46
+    // Page 47
+    // Page 48
+    // Page 49
+    // Page 50
+    // Page 51
+    // Page 52
+    // Page 53
+    // Page 54
+    // Page 55
 };
