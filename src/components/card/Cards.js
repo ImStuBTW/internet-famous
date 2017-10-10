@@ -391,63 +391,63 @@ export default {
     //Page 8
     g1: {
         title: 'A Baby Sloth',
-        clue: '',
+        clue: 'The juvenile form of a slow-moving, hook-handed mammal whose fur is home to other creatures, including beetles and cockroaches. Popular on websites devoted to cuteness due to their perpetual smiles and docility. They are especially darling when taking a bath.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     g2: {
         title: 'Kurt Cobain',
-        clue: '',
+        clue: 'The lead singer-songwriter of the grune rock band Nirvana, known for songs like "Smells Like Teen Spirit" and "All Apologies." He had a history of mental illness and drug abuse, which led to his death in 1994 by a self-inflicted shotgun wound to the head.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     g3: {
         title: 'Tonya Harding',
-        clue: '',
+        clue: 'Olympic figure skater, professional boxer, sex tape star, and land speed record holder for vintage gas coupes, and felon. She became a pariah after conspiring with her husband, Jeff Gillooly, to break competitor Nancy Kerrigan\'s leg by whacking it with a telescopic baton.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     g4: {
         title: 'A Mole',
-        clue: '',
+        clue: 'An informant or spy recruited to report on a target government or organization from the inside. They are named after a small, subterranean species of mammal. The term was popularized by John Le Carré in Tinker, Tailor, Soldier, Spy, but was first used by Fancis Bacon in 1626.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     g5: {
         title: 'Prince',
-        clue: '',
+        clue: 'The "artist formerly known as", who released Purple Rain and the Batman soundtrack. In 2011, the website Heavy Table published illustrations of his refrigerator, which contained 5 pounds of Dunk-a-roos, 18 varieties of mustard, Braunschweiger, and a quarter of Yak\'s milk.',
         category: 'CELEBRITY',
         score: '1',
         color: green
     },
     g6: {
         title: 'A Beard',
-        clue: '',
+        clue: 'A term referencing facial hair and used for a person who conceals someone else\'s sexual oreientation, either knowningly or unkowingly. This concept was an element in the 1984 film Broadway Danny Rose by Woody Allen and remains a popular comedic subject.',
         category: 'ET CETERA',
         score: '1',
         color: green
     },
     g7: {
         title: 'God',
-        clue: '',
+        clue: 'The Supreme Being, who monotheists often believe to be omniscient, omnipotent, omnipresent, and responsible for the creation of the universe. In the West, he is often depicted as an old white man with a long gray bread.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     g8: {
         title: 'The lady who spilled coffee on herself at McDonalds',
-        clue: '',
+        clue: 'A 79-year-old woman who won a lawsuit against the world\'s largest fast-food chain after spilling a scalding drink onto her lap while riding in her grandson\'s 1989 Ford Probe. It soaked into her sweat-pants, causing first degree burns to her thighs, buttocks, and groin.',
         category: 'CELEBRITY',
         score: '4',
         color: red
     },
     g9: {
         title: 'Anne Frank',
-        clue: '',
+        clue: 'A wartime diarist and Holocaust victim. After visiting the famous site where her family hid from the Nazis for nearly two years, the pop star Justin Bieber worte, "Truely inspiring to be able to come here. Anne was a great girl. Hopefully she would have been a belieber."',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
@@ -455,63 +455,63 @@ export default {
     //Page 9
     h1: {
         title: 'Deep Blue',
-        clue: '',
+        clue: 'An IBM computer that defeated chess champion Garry Kasparov 2-1 with 3 draws. Kasparov demanded a rematch after accusing IBM of cheating. They declined and decomissioned it following the match. Due to its small sample size, it does not have an ELO rating.',
         category: 'HISTORICAL FIGURE',
         score: '3',
         color: purple
     },
     h2: {
         title: 'Pee-wee Herman',
-        clue: '',
+        clue: 'The alter ego of commedian Paul Reubens, who wears a high-cut grey suit, red bow tie, and heavy makeup. His character is often associated with a spastic dance performance to the song "Tequila", which he used to win the respect of the Satan\'s Helpers biker gang.',
         category: 'CARD BY EMMA KOENIG',
         score: '1',
         color: green
     },
     h3: {
         title: 'An Oompa Loompa',
-        clue: '',
+        clue: 'A race of short, orange-skinned folks from Willy Wonka & the Chocolate Factory, who work in the factory and sing moralizing songs. In an early version of Roald Dahl\'s novel, they were depicted as African pygmies but were later rewritten to be white and blond.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     h4: {
         title: 'Rapunzel',
-        clue: '',
+        clue: 'A character from the fairy tale collection by the Brothers Grimm, who is imprisoned in a tower by an evil witch. She is widely associated with the command, said by those who want to visit her in the tower, "Let down your hair, so that I may climb the golden stair."',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     h5: {
         title: 'Pac-Man',
-        clue: '',
+        clue: 'The hero and title character of an 80s arcade game, where he navigates mazes and eats pellets, power pellets, and fruit while avoiding ghosts. One of gaming\'s earliest breakout stars, he was soon usurped by his female counterpart in a far superior sequel.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     h6: {
         title: 'Godzilla',
-        clue: '',
+        clue: 'The King of the Monsters, who appeared in a series of Japanese films made in response to the atomic bombings of Hiroshima and Nagasaki. The monster typically has a reptilian look, walks on two legs, has a long tail, and has "nuclear breath".',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     h7: {
         title: 'Man Hands',
-        clue: '',
+        clue: 'The minor character on the show Seinfeld. She is a beautiful woman who Jerry cannot stay attracted to because of her large extremities. The episoder\'s writer, David Mandel, created the character in response to his wife\'s own self-conciousness about this condition.',
         category: 'FICTIONAL CHARACTER',
         score: '4',
         color: red
     },
     h8: {
         title: 'John Wilkes Booth',
-        clue: '',
+        clue: 'A 19th century actor and Confederate sympathizer, who derailed his and nearly that of his brother Edwin\'s acting careers when he assassinated Abraham Lincoln. The original plan was to kidnap Lincoln and exchange him for a number of Confederate POWs.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     h9: {
         title: 'The Very Hungry Caterpillar',
-        clue: '',
+        clue: 'A children\'s book character that takes the reader through an insect\'s transformation from larva to butterfly. The book received worldwide acclaim, selling over 30M copies. The competitive eater Kobayashi frequently gives this book out as holiday gifts.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
@@ -1945,28 +1945,1389 @@ export default {
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
-    }
+    },
+    F4: {
+        title: 'Dr. Mario',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    F5: {
+        title: 'A Troll Doll',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    F6: {
+        title: 'A Dead Horse',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    F7: {
+        title: 'An Amish',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    F8: {
+        title: 'Dikembe Mutombo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    F9: {
+        title: 'Lady Gaga\'s meat dress',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
     // Page 33
+    G1: {
+        title: 'Kenny G',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    G2: {
+        title: 'Solange Knowles',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    G3: {
+        title: 'A Pug',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    G4: {
+        title: 'The Invisible Man',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    G5: {
+        title: 'Carrie',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    G6: {
+        title: 'Prancer',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    G7: {
+        title: 'Hal-9000',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    G8: {
+        title: 'An immovable Object',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    G9: {
+        title: 'Chairy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
     // Page 34
+    H1: {
+        title: 'The elephant that Thomas Edison electrocuted (Topsy)',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    H2: {
+        title: 'The Soup Nazi',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    H3: {
+        title: 'Mother Teresa',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    H4: {
+        title: 'David Blaine',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    H5: {
+        title: 'Lennie Small',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    H6: {
+        title: 'Bill Clinton',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '1',
+        color: green
+    },
+    H7: {
+        title: 'Flappy Bird',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    H8: {
+        title: 'The Übermensch',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    H9: {
+        title: 'The Dude',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
     // Page 35
+    I1: {
+        title: 'A Rat King',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I2: {
+        title: 'Icarus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    I3: {
+        title: 'A Child Soldier',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I4: {
+        title: 'An Unstoppable Force',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I5: {
+        title: 'Kate Bush',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    I6: {
+        title: 'A Cyberbully',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I7: {
+        title: 'A Never Nude',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I8: {
+        title: 'A Juggalo',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    I9: {
+        title: 'A Doomsday Prepper',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
     // Page 36
+    J1: {
+        title: 'The Robber from Settlers of Catan',
+        clue: '',
+        category: 'CARD BY AMY & JOSH STERN',
+        score: '4',
+        color: red
+    },
+    J2: {
+        title: 'Marie Antoinette',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    J3: {
+        title: 'Your Own Shadow',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    J4: {
+        title: 'Werner Herzog',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    J5: {
+        title: 'Dolph Lundgren',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    J6: {
+        title: 'The Jesus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    J7: {
+        title: 'David Hasselhoff',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    J8: {
+        title: 'Right Said Fred',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    J9: {
+        title: 'A Flautist',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
     // Page 37
+    K1: {
+        title: 'A Coke Muel',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    K2: {
+        title: 'The Ego',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    K3: {
+        title: 'A Manic Pixie Dream Girl',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    K4: {
+        title: 'Greg Louganis',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    K5: {
+        title: 'A Pufferfish',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    K6: {
+        title: 'Ms. Pac-Man',
+        clue: '',
+        category: 'CARD BY NAT SIMS',
+        score: '2',
+        color: blue
+    },
+    K7: {
+        title: 'General Butt Naked',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    K8: {
+        title: 'Nyan Cat',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    K9: {
+        title: 'Pharell\'s hat',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
     // Page 38
+    L1: {
+        title: 'A Blue Man',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    L2: {
+        title: 'A Nigerian Prince',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    L3: {
+        title: 'Afro Ninja',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    L4: {
+        title: 'A Basic Bitch',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    L5: {
+        title: 'MySpace tom',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    L6: {
+        title: 'A Cosplayer',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    L7: {
+        title: 'A Bottom',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    L8: {
+        title: 'Sinéad O\'Connor',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    L9: {
+        title: 'David After Dentist',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
     // Page 39
+    M1: {
+        title: 'Steve Irwin, the Crocodile Hunter',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    M2: {
+        title: 'Dick Armey',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    M3: {
+        title: 'Keyboard Cat',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    M4: {
+        title: 'A n00b',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    M5: {
+        title: 'Cindy Sherman',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    M6: {
+        title: 'Dolly the Sheep',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    M7: {
+        title: 'An Eager Beaver',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    M8: {
+        title: 'Punxsutawney Phil',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    M9: {
+        title: 'Little Mikey',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
     // Page 40
-    // Page 41
+    N1: {
+        title: 'Michael J. Fox',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    N2: {
+        title: 'The Elephant Man',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    N3: {
+        title: 'Aaron Burr',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '2',
+        color: blue
+    },
+    N4: {
+        title: 'Jackson Galaxy',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    N5: {
+        title: 'Goose',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    N6: {
+        title: 'Nicolas Cage',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    N7: {
+        title: 'Benjamin Button',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    N8: {
+        title: 'The Lawnmower Man',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    N9: {
+        title: 'Commander William T. Riker',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    // Page 41,
+    O1: {
+        title: 'The Zodiac Killer',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    O2: {
+        title: 'E. Honda',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    O3: {
+        title: 'Carlton Banks',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    O4: {
+        title: 'Miss Havisham',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    O5: {
+        title: 'Bees!',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    O6: {
+        title: 'Gizmo',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    O7: {
+        title: 'Quetzalcoatl',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    O8: {
+        title: 'Mother Brain',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    O9: {
+        title: 'Balki Bartokomous',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
     // Page 42
+    P1: {
+        title: 'Slender Man',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P2: {
+        title: 'A Freckleface',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    P3: {
+        title: 'The astronaut who drove across the country wearing space diapers to kidnap her boyfriend',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    P4: {
+        title: 'Manti Te\'o\'s girlfriend',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P5: {
+        title: 'Stefon',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P6: {
+        title: 'Colonel Angus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P7: {
+        title: 'Greedo',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P8: {
+        title: 'Godot',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    P9: {
+        title: 'Chris Hadfield',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
     // Page 43
+    Q1: {
+        title: 'Admiral Ackbar',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q2: {
+        title: 'Raskolnikov',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q3: {
+        title: 'Hester Prynne',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q4: {
+        title: 'Stephen Hawking',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q5: {
+        title: 'Duck Hunt Dog',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q6: {
+        title: 'The Last Unicorn',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q7: {
+        title: 'Florida Man',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q8: {
+        title: 'King Hippo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Q9: {
+        title: 'Not a Dick',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
     // Page 44
-    // Page 45
-    // Page 46
-    // Page 47
+    R1: {
+        title: 'Samson',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    R2: {
+        title: 'David Foster Wallace',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    R3: {
+        title: 'A Honey Badger',
+        clue: '',
+        category: 'CARD BY STEFANIE MARAZZI',
+        score: '3',
+        color: purple
+    },
+    R4: {
+        title: 'A Highlander',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    R5: {
+        title: 'Dr. Zaius',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    R6: {
+        title: 'Sneezing Baby Panda',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    R7: {
+        title: 'Rasputin',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    R8: {
+        title: 'Marcel Marceau',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    R9: {
+        title: 'Howard Hues',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    // Page 45,
+    S1: {
+        title: 'Ham',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    S2: {
+        title: 'Royal Tenenbaum',
+        clue: '',
+        category: 'CARD BY JASON KOTTKE',
+        score: '3',
+        color: purple
+    },
+    S3: {
+        title: 'The Earl of Sandwich',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    S4: {
+        title: 'Brian Boitano',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    S5: {
+        title: 'Archimedes',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    S6: {
+        title: 'Carl Segan',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    S7: {
+        title: 'Lisa "Left Eye" Lopes',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    S8: {
+        title: 'Lady Godiva',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    S9: {
+        title: 'Jacob the Jeweler',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    // Page 46,
+    T1: {
+        title: 'LeVar Burton',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    T2: {
+        title: 'The Prophet Muhammad (PBUH)',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T3: {
+        title: 'Dick Cheney\'s pacemaker',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T4: {
+        title: 'Zelda Fitzgerald',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T5: {
+        title: 'Charles Ponzi',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T6: {
+        title: 'Frida Kahlo',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T7: {
+        title: 'Harriet Tubman',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    T8: {
+        title: 'Uncle Ben',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    T9: {
+        title: 'Mrs. O\'Leary\'s Cow',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    // Page 47,
+    U1: {
+        title: 'Sisyphus',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    U2: {
+        title: 'John Wayne Gracy, Jr.',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    U3: {
+        title: 'Mama Cass',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    U4: {
+        title: 'Archduke Franz Ferdinand',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    U5: {
+        title: 'CLARENCE THOMAS',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    U6: {
+        title: 'Eva Braun',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    U7: {
+        title: 'A Bear',
+        clue: '',
+        category: 'ET CETERA',
+        score: '1',
+        color: green
+    },
+    U8: {
+        title: 'André',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    U9: {
+        title: 'The Lindbergh Baby',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
     // Page 48
+    V1: {
+        title: 'A Mall Santa',
+        clue: '',
+        category: 'CARD BY MATT RIX',
+        score: '3',
+        color: purple
+    },
+    V2: {
+        title: 'Vidal Sassoon',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    V3: {
+        title: 'The Stay Puff Marshmallow Man',
+        clue: '',
+        category: 'NAME BY LOREN BRICHTER',
+        score: '1',
+        color: green
+    },
+    V4: {
+        title: 'Gregor Samsa',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    V5: {
+        title: 'A Bassoonist',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    V6: {
+        title: 'Grizzly Man (Timothy Treadwell)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    V7: {
+        title: 'Joyce Carol Oates',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    V8: {
+        title: 'John Philip Sousa',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    V9: {
+        title: 'Typhoid Mary',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
     // Page 49
-    // Page 50
-    // Page 51
-    // Page 52
-    // Page 53
+    W1: {
+        title: 'Grizzly Adams',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    W2: {
+        title: 'Patient Zero',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    W3: {
+        title: 'The Alien from Alien',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    W4: {
+        title: 'A LARPer',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    W5: {
+        title: 'Johnnie Cochran',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    W6: {
+        title: 'Juan Valdez',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    W7: {
+        title: 'Marion Barry',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '3',
+        color: purple
+    },
+    W8: {
+        title: 'Sweeny Todd',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    W9: {
+        title: 'A Chimney Sweep',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    // Page 50,
+    X1: {
+        title: 'Ghost Dog',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    X2: {
+        title: 'Marina Abramović',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    X3: {
+        title: 'She-Hulk',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    X4: {
+        title: 'Terri Schiavo',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    X5: {
+        title: 'Mike Hunt',
+        clue: '',
+        category: 'CARD BY TIM GUNNINK',
+        score: '3',
+        color: purple
+    },
+    X6: {
+        title: 'The guy who threw his shoes at George W. Bush',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    X7: {
+        title: 'Terry Richardson',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    X8: {
+        title: 'R. Kelly',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    X9: {
+        title: 'Colton Burpo',
+        clue: '',
+        category: 'ET CETERA',
+        score: '4',
+        color: red
+    },
+    // Page 51,
+    Y1: {
+        title: 'Kindergarten Cop',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    Y2: {
+        title: 'Fabio',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    Y3: {
+        title: 'David Caruso',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    Y4: {
+        title: 'Jack Kevorkian',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    Y5: {
+        title: 'Deepak Chopra',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    Y6: {
+        title: 'Joey Chestnut',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Y7: {
+        title: 'Grumpy Cat',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Y8: {
+        title: 'Jiro',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    Y9: {
+        title: '8 Maids-a-Milking',
+        clue: '',
+        category: 'ET CETERA',
+        score: '2',
+        color: blue
+    },
+    // Page 52,
+    Z1: {
+        title: 'John Wayne Bobbit',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Z2: {
+        title: 'Feminist Ryan Gosling',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    Z3: {
+        title: 'A Reptilian',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '4',
+        color: red
+    },
+    Z4: {
+        title: 'Wilfrod Brimley',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    Z5: {
+        title: 'A Boss',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    Z6: {
+        title: 'The black guy from The Shining (Catman Crothers)',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    Z7: {
+        title: 'John McAfee',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '4',
+        color: red
+    },
+    Z8: {
+        title: 'Chris Farley',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '1',
+        color: green
+    },
+    Z9: {
+        title: 'A Booth Babe',
+        clue: '',
+        category: 'ET CETERA',
+        score: '3',
+        color: purple
+    },
+    // Page 53,
+    AA: {
+        title: 'Lil Bub',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    },
+    AB: {
+        title: 'Grimace',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    AC: {
+        title: 'Sad Keanu',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    AE: {
+        title: 'Xena, Warrior Princess',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '2',
+        color: blue
+    },
+    AF: {
+        title: 'Banksy',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '2',
+        color: blue
+    },
+    BA: {
+        title: 'Octopussy',
+        clue: '',
+        category: 'FICTIONAL CHARACTER',
+        score: '3',
+        color: purple
+    },
+    BB: {
+        title: 'Ruth Bader Ginsburg',
+        clue: '',
+        category: 'HISTORICAL FIGURE',
+        score: '4',
+        color: red
+    },
+    BC: {
+        title: 'Joaquin Phoenix\'s forehead',
+        clue: '',
+        category: 'CELEBRITY',
+        score: '3',
+        color: purple
+    }
+    // 09 left intentionally blank.
     // Page 54
+    // This page is inextricably just a copy of page 53.
     // Page 55
+    // This page intentionally left blank.
 };
