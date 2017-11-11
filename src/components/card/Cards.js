@@ -519,63 +519,63 @@ export default {
     //Page 10
     i1: {
         title: 'A Human Centipede',
-        clue: '',
+        clue: 'The title creature of a 2009 horror film where a sadistic German doctor forms one of these by sewing three individuals together, mouth to anus, forcing them to share a single digestive system. The film\'s director explained that his work is partially a reflection on facism.',
         category: 'ET CETERA',
         score: '3',
         color: purple
     },
     i2: {
         title: 'Amelia Earhart',
-        clue: '',
+        clue: 'An American aviatrix, who was the first woman to fly solo across the Atlantic. She vanished mysteriously in 1937 while attempting to circumnavigate the globe. Many connspiracy theories emerged, from her being captured by the Japanese to her eloping with her navigator.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     i3: {
         title: 'Vincent van Gogh',
-        clue: '',
+        clue: 'A Dutch post-Impressionist painter known for his depections of wheat fields, sunflowers, and starry nights. He struggled with mental illness, once slicing off his left ear with a razor and delivering it to a brothel as a memento for his friend Paul Gauguin.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     i4: {
         title: 'Abraham Lincoln',
-        clue: '',
+        clue: 'The 16th President of the US, who abolished Slavery and led the North to victory in the Civil War. He is often depicted wearing a top hat with his signature chin curtain beard. He was assassinated by the actor John Wikes Booth while attending a play at Ford\'s Theatre.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     i5: {
         title: 'Mr. Owl',
-        clue: '',
+        clue: 'A bespectacled, know-it-all bird who famously answered the question, "How many licks does it take to get to the Tootsie Roll center of a Tootsie Pop?" by licking the lollipop 3 times before biting into it with his sharp break, then declaring it only takes 3 licks.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     i6: {
         title: 'A Grammer Nazi',
-        clue: '',
+        clue: 'A person who enforces language rules to an unusually high degree. According to knowyourmeme.com, one of the earliest uses was 1995, when a user on the newsgroup alt.gothic called someone out for correcting the use of the term "thusly" for "thus".',
         category: 'ET CETERA',
         score: '3',
         color: purple
     },
     i7: {
         title: 'Yoshi',
-        clue: '',
+        clue: 'The egg-laying dinosaur sidekick of Mario and Luigi. The name refers both to individuals and the entire species. They have long tongues that they use to eat things like Goombas, apples, and other objects, which can be excreted as eggs or expectorated as fireballs.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     i8: {
         title: 'Hannibal Lector',
-        clue: '',
+        clue: 'A psychiatrist, serial killer, cannibal, and antihero from The Silence of the Lambs novel and film. He was famously portrayed by Anthony Hopkins, whi explains to Clarice that he once ate a census taker\'s liver "with fava beans and a nice Chianti. [slurping sounds]"',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     i9: {
         title: 'A Centaur',
-        clue: '',
+        clue: 'A mythological hybrid whose top half is a humand and bottom half is a horse. The greeks considered them savage, drunken beings. The myth persists today, including a famous tattoo of half Patrick Swayze, half horse and SNL\'s depiction of one of these on a failed job interview.',
         category: 'ET CETERA',
         score: '1',
         color: green
@@ -583,63 +583,63 @@ export default {
     //Page 11
     j1: {
         title: 'Dr. Henry Heimlich',
-        clue: '',
+        clue: 'A surgeon credited with inventing a maneuver that prevents suffocation when a person is choking by jamming your fist into their abdomen. He also advocated for the technique to be used to treat drowning (don\'t do it) and that malaria could treat cancer, Lyme disease, and HIV.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     j2: {
         title: 'The Shoe Comber (Richard Reid)',
-        clue: '',
+        clue: 'A would-be suicide bomber who tried and failed to blow up a plane with his casual footware. He was caught trying to use a match to light a fuse mid-flight, explosive sneaker in his lap. The incident prompted the TSA to institute footware screning at airports.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     j3: {
         title: 'Slimber',
-        clue: '',
+        clue: 'A character from the Ghostbusters franchise, who appears as a transparent green blob composed of pure Ectoplasm. Ravenously consuming all food in sight, writer and actor Dan Aykroyd allegedly refered to him as "The Ghost of John Belushi."',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     j4: {
         title: 'Magic Mike',
-        clue: '',
+        clue: 'The title character of a Steven Soderbergh film about a male stripper who performs at Xquisite Strip Club. Played by Channing Tatum, the character is loosely based on Tatum\'s real-life experience as a young stripper in Tampa, Florida.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     j5: {
         title: 'Drunk Jeff Goldblum',
-        clue: '',
+        clue: 'An actor who appears in an Apple ad that was remixed on YouTube to make his speech sound slow and slurred ("What do you think the greatest gift of the holidays is? Internet?"). He has also appeared in The Fly, Jurassic Park, and many other films.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     j6: {
         title: 'Princess Di',
-        clue: '',
+        clue: 'The ex-sife of Prince Charles and mother of William and Harry. She died tragically in a Paris car crash, which was found to be the result of grossly negligent driving and to the presence of paparazzi. Her funeral was one of the most viewed events in television history.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     j7: {
         title: 'The Raven',
-        clue: '',
+        clue: 'A large black bird and the subject of a poem by Edgar Allan Poe. In it, the bird visits a man grieving the loss of his love, Lenore. Sitting above him on a bust of the goddess Athena, the bird repeats the words "nevermore" to the man\'s inquiries, slowly driving him mad.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     j8: {
         title: 'The Loch Ness Monster',
-        clue: '',
+        clue: 'A legendary cryptid, who supposedly lives in a deep freshwater lake in the Scottish Highlands. Believers speculate that the creature is a margine dinosaur that somehow survived to modern day. The scientific community continues to regard the creature as a hoax.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     j9: {
         title: 'Teddy Ruxpin',
-        clue: '',
+        clue: 'A storytelling toy bear from the 80s, who had an audio cassette deck in his body. Stories such as "The Wooly What\'s-It: Learning Can Be Fun!" and "Tweeg and the Bounders: You have to Earn the Things Worth Having" tended to focus on promoting positive behavior.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
@@ -647,63 +647,63 @@ export default {
     //Page 12
     k1: {
         title: 'Rosemary\'s Baby',
-        clue: '',
+        clue: 'The title infant from a 70s horror film by Roman Polanski. Its mother, played by Mia Farrow, fears that her husband made a Stanic pact with their neighbors in ordr for success in his acting career. At the conclusion, it is revealed that the child is actually the spawn of Satan.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     k2: {
         title: 'Your Mom',
-        clue: '',
+        clue: 'The woman who gave birth to you and/or raised you. The word above or the actual name of your real-life caregiver are both valid.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     k3: {
         title: 'The Swedish Chef',
-        clue: '',
+        clue: 'A cook and Muppet that hails from Northern Europe. He wears a toque blanche and speaks in sing-songy gibberish. Humans from his country of origin often find the character offensive and claim that his accent totally sounds more like Norwegian anyway.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     k4: {
         title: 'The Eye of Sauron',
-        clue: '',
+        clue: 'A manifestation of the title character in J.R.R. Tolkien\'s fantasy series The Lord of the Rings. Frodo describes it as "rimmed with fire, but was itself glazed, yellow as a cat\'s, watchful and intent, and the black slit of its pupil opened on a pit, a window into nothing."',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     k5: {
         title: 'Bubble Boy',
-        clue: '',
+        clue: 'A person with a genetic disease that leaves them vulnerable to infection and forced to live in a completely sterile enviornment. One was famously portrayed on Seinfeld, where he fought with George over a Trivial Pursuit card that read "Moops" instead of "Moors."',
         category: 'FICTIONAL CHARACTER',
         score: '3',
         color: purple
     },
     k6: {
         title: 'Bloody Mary',
-        clue: '',
+        clue: 'A legendary ghost who is said to be conjured in a mirror by saying her name multiple times. Often attempted by young girls, the ghost is sometimes said to reveal the future and other times said to attempt to scratch the person\'s eyes out.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     k7: {
         title: 'Colonel Sanders',
-        clue: '',
+        clue: 'The founder of Kentucky Fried Chicken, whose likeness is also used on their logo. He is easily identified by his white hair, goatee, black-rimmed glasses, white suit, and string tie. His honorific title refers to a Kentucky tradition rather than military rank.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     k8: {
         title: 'O.J. Simpson',
-        clue: '',
+        clue: 'Former professional football player, actor, and Isotoner spokesman. He was found not guilty of murder in one of the most public trials of the 20th century. He wrote a book about the case called If I Did It and is currently incarcerated for the theft of his own sports memorabilia.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     k9: {
         title: 'The Hamburglar',
-        clue: '',
+        clue: 'A young, red-headed thief who dresses up in striped clothing and steals items from the McDonald\'s restaurant chain. Originally an old man with a long nose inexplicably called the "Lone Jogger", he has since ceased being a villian in the McDonaldland universe.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
@@ -711,63 +711,63 @@ export default {
     // Page 13
     l1: {
         title: 'A Leper',
-        clue: '',
+        clue: 'A person infected with Hansen\'s Disease, which sometimes results in the inability to feel pain and consequently loss of body parts. To prevent the spread of the disease, they were historically seperated into isolated colonies—a practice still alive in India and China.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     l2: {
         title: 'Khan!',
-        clue: '',
+        clue: 'A villian from the Star Trek franchise, who once controlled a portion of the earth during the Eugenics Wars of the 90s. Ricardo Montalbán played the genetically engineered superhuman, delivering lines such as, "Revenge is a dish that is best served cold."',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     l3: {
         title: 'The Kaiser',
-        clue: '',
+        clue: 'The title of German leader Wilhelm II, who ruled until the end of World War I. He was depicted in propaganda with an exaggerated handlebar mustache and Pickelhaube, the spiked helmet of the Prussian army. He was also once accused of stealing the word for "twenty."',
         category: 'HISTORICAL FIGURE',
         score: '3',
         color: purple
     },
     l4: {
         title: 'A California Raisin',
-        clue: '',
+        clue: 'A member of a fictional R&B group composed of anthropomorphic dried grapes from the West Coast. They came to prominence in claymation form, singing a cover of "I Heard It Through the Grapevine" in advertisement. They were also popular as plastic toys.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     l5: {
         title: 'A Hungry Hungry Hippo',
-        clue: '',
+        clue: 'The title character of a children\'s game that teaches kids to eat marbels. Each of the four players simultaniously mash a plastic lever to get their character—a colorful version of the third largest land mammal—to consume as many of these objects as possible.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     l6: {
         title: 'Aunt Jemima',
-        clue: '',
+        clue: 'The pretty racist mascot of a line of pancake mixes and syrups by the Quaker Oats company. Her character was derived from a minstrel show\'s mammy-like figure. Like Uncle Ben, she represents an idealized view of domestic servitude in southern life.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     l7: {
         title: 'Jesus H. Christ',
-        clue: '',
+        clue: 'A subversive Jewish rabbi, who Christians believe to be the Son of God and Messiah of the Old Testament. He allegedly performed miracles, was crucified by the Romans, and rose from the dead. A middle initial is used in various oaths, but its origin is unclear.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     l8: {
         title: 'The Kraken',
-        clue: '',
+        clue: 'A gigantic mythical sea monster that first appeared in Norse mythology. Because of its size, it was thought to have been inspired by giant squid sightings. In contemporary media, it is often seen being "released" or "unleashed" upon an unsuspecting hero.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     l9: {
         title: 'A TSA Agent',
-        clue: '',
+        clue: 'An employee of a US Department of Homeland Security branch. Many of its employees are posted in airports to screen passangers and their property, including pat-downs and x-rays. Their average salary is $25-38K per year, excluding swag.',
         category: 'ET CETERA',
         score: '2',
         color: blue
@@ -775,63 +775,63 @@ export default {
     // Page 14
     m1: {
         title: 'A Cylon',
-        clue: '',
+        clue: 'A member of a robotic civilization in the Battlestar Galactica franchise. They were created somewhat by accident on Caprica and are unique in that they experience many common human emotions and are often not fully aware of their status as a robotic lifeform.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m2: {
         title: 'Splinter',
-        clue: '',
+        clue: 'An elderly humanoid rat who was the sensei of the Teenage Mutant Ninja Turtles. In the 80s cartoon series, he was mutated from the great samurai warrior, Hamato Yoshi. In other versions however, this character was the pet rodent of Hamato Yoshi.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m3: {
         title: 'Babar',
-        clue: '',
+        clue: 'An elephant from the children\'s book by Jean de Brunhoff, who critics argue offers a justification for colonialism. In the book, he leaves the jungle, visits a city, returns in a green suit, introduces French civilization to his fellow elephants, and is crowned king.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m4: {
         title: 'The Underwear Bomber',
-        clue: '',
+        clue: 'The moniker of Umar Farouk Abdulmutallah, a would-be terrorist who attempted to blow up a passanger plane with explosives sewn into his unmentionables. His plan failed when the explosives were soiled due to his wearing the same pants for two weeks straight.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     m5: {
         title: 'Chun-Li',
-        clue: '',
+        clue: 'A character from the Street Fighter video game series, who relies primarily on powerful kicks delivered with the aid of her remarkably muscular thighs. Her most famous move is the Lightening Kick, with the Spinning Bird Kick a close second. Her blood type is A.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m6: {
         title: 'The T-1000',
-        clue: '',
+        clue: 'A shapeshifting robot from Terminator 2. Made of liquid metal, Skynet sent it into the past to kill Edward Furlong, who was protected by Arnold Schwarzeneggar\'s loveable, technologically inferior, T-800. Billy Idol was slated to play this character before a motor cycle accident.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m7: {
         title: 'Cthulhu',
-        clue: '',
+        clue: 'A monsterous deity created by H.P. Lovecraft. It is hundreds of meters tall and has the arms and legs of a man, claws, the head of a giant octopus, and bat wings. Its mythos gained increased popularity from a series of allusions to it in the HBO series True Detective.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m8: {
         title: 'A Muggle',
-        clue: '',
+        clue: 'Any non-magical character in the Harry Potter franchise. Their inability to perform magic was likely a hereditary trait and was used as a justification for persecution by an extremist group of magical persons, Death Eaters, who believed their own bloodlines should remain pure.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     m9: {
         title: 'A Fainting Goat',
-        clue: '',
+        clue: 'A farm animal that suffers from a genetic disorder that causes its muscles to freeze for approximately 10 seconds when panicked. The condition is formally known as myotonia congenita, which Buzzfeed once described as "easily the cutest neurological disorder."',
         category: 'ET CETERA',
         score: '3',
         color: purple
@@ -839,63 +839,63 @@ export default {
     // Page 15,
     o1: {
         title: 'Count Chocula',
-        clue: '',
+        clue: 'A vampire mascot from the General Mills Corporation\'s series of monster-based breakfast cereals. Like his colleagues Franken-Berry, Boo-Berry, Fruit Brute, and Yummy Mummy, his origin is a mystery. His tagline, "I vant to eat your cereal!" seems a little on the nose.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     o2: {
         title: 'Burning Man',
-        clue: '',
+        clue: 'A 40-foot wooden effigy taht is set on fire during a weeklong event in Nevada\'s Black Rock Desert. The organizers deny that is has any connection to similar wicker effigies that were built by anchient Druids for pegan Celtic rituals that some speculate involved human sacrifice.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     o3: {
         title: 'A Furby',
-        clue: '',
+        clue: 'A fuzzy interactive toy that became popular in the late 90s. Vaguely resembling an owl, it speaks a unique language, learning English over time through interactions with its owner. When held upside down it says things like, "me scared" and begins crying.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     o4: {
         title: 'Paul Reubens',
-        clue: '',
+        clue: 'An actor famous for his character Pee-wee Herman. He was arrested for masturbating in a Sarasota, FL adult theater in 1991. When confronted by police, he allegedly said, "I\'m Pee-wee Herman" and suggested doing a local children\'s benefit to "take care of this."',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     o5: {
         title: 'A Sherpa',
-        clue: '',
+        clue: 'A member of a Nepalese ethnic group that resides in the Himalayan mountain range. The term often refers to guides who assist climbers. Amoung the most famous of these in history was Tenzing Norgay, who reached the submit of Mount Everest with Edmund Hillary in 1953.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     o6: {
         title: 'El Niño',
-        clue: '',
+        clue: 'A band of warm weather resulting in above-average temperatures for most of North America and wetter seasons for most of South America. The weather system inspired a Chris Farley SNL character that depicted the tropical storm as a boastful professional wrestler.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     o7: {
         title: 'Ceiling Cat',
-        clue: '',
+        clue: 'The subject of a famous internet photo showing a feline poking out of a hole and, allgedly, "watching you masturbate." In 2010, a Redditor indicated that the hole was actually in a wall, claiming "This changes everything." The feline is said to have a rival in the basement.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     o8: {
         title: 'The Yellow Power Ranger',
-        clue: '',
+        clue: 'A hero from the 90s children\'s show that featured a team of teenagers that fought off aliens by transforming into superheroes and piloting robots called Zords. The show was often accused of racism for aligning each character\'s uniform color with the actor\'s ethnicity.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     o9: {
         title: 'The one-armed dummer from Def Leppard',
-        clue: '',
+        clue: 'The percussionist for the popular 80s hair metal band known for his hits like "Love Bites" and "Pour Some Sugar on Me." He is best known for continuing to record and perform using a specially designed kit following the amputation of a limb after a drag racing incident.',
         category: 'CELEBRITY',
         score: '4',
         color: red
@@ -903,63 +903,57 @@ export default {
     // Page 16
     p1: {
         title: 'Uncle Tom',
-        clue: '',
+        clue: 'A racial epithet used against members of a subjugated group, particularly African Americans, who display excessive deference to authority. The term is derived from the eponymous character in the 1852 novel by Harriet Beecher Stowe.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     p2: {
         title: 'George Washington',
-        clue: '',
+        clue: 'The 1st President of the US. John Adams claimed that his famed toothlessness was the result of cracking Brazil nuts. His false teeth were not made of wood, but hippopotamus and elephant ivory. He had a previous pair most likely made from, no joke, slave teeth.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     p3: {
         title: 'The Lord of Dance',
-        clue: '',
+        clue: 'An Irish performer who came to prominence during the intermission of the 1994 Eurovision Song Contest. His show, Riverdance, melded tapping with Irish folk traditions, following his quest to defect the dark lord Don Dorcha from destorying Planet Ireland.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
-    p4: {
-        title: 'Goatse',
-        clue: '',
-        category: 'CELEBRITY',
-        score: '4',
-        color: red
-    },
+    // You know what, I'm just going to skip p4, Goatse probably doesn't need to be in my version.
     p5: {
         title: 'P.F. Chang',
-        clue: '',
+        clue: 'The combined identity of Paul Fleming and Philip Chiang, the two founders of the eponymous Asian Fusion restaurant founded in Scottsdale, Arizona in 1993. They operate over 200 restaurants across the US, far more than its equally middlebrow competitor, Benihana.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     p6: {
         title: 'Oedipus',
-        clue: '',
+        clue: 'A legendary Anchient Greek king who was prophesized to murder his father and marry his mother. The pyshchologist Sigmund Freud named his complex related to a person\'s unconcious desire to sexually possess their opposite sex parent after this person.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     p7: {
         title: 'A Bleeder',
-        clue: '',
+        clue: 'A person who loses blood quickly because of a lower than average clotting rate, otherwise known as a hemophiliac. This term was made famous in the 1998 comedy There\'s Something About Mary, where Ben Stiller\'s character Ted damages his genitals with a zipper.',
         category: 'ET CETERA',
         score: '3',
         color: purple
     },
     p8: {
         title: 'A Roomba',
-        clue: '',
+        clue: 'An automated vacuum cleaner marketed as a convenient way to clean one\'s home. Its sensors allow it to navigate each room, cleaning under furniture and in often-ignored corners. Cats have been known to ride it. It definately does not record your daily movements.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     p9: {
         title: 'Teen Wolf',
-        clue: '',
+        clue: 'An adolescent lycanthrope from an 80s film and recent TV series. Originally played by Michael J. Fox, he uses his powers to gain popularity at his high school and become the star basketball player, leading the Beavers to a state champinoship title.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
@@ -967,63 +961,63 @@ export default {
     // Page 17
     q1: {
         title: 'Falkor',
-        clue: '',
+        clue: 'A luckdragon from the novel and film The Neverending Story, who was ridden by Bastion and Atreyu. He is depicted as a creepy, but sort of adorable, dragon with mostly dog-like features: paws, shaggy hair, and big floppy ears. He can fly even though he doesn\'t have wings.',
         category: 'FICTIONAL CHARACTER',
         score: '3',
         color: purple
     },
     q2: {
         title: 'The Trojan Horse',
-        clue: '',
+        clue: 'A wooden object used by the Greeks to end the Trojan War. When the Trojans took it inside the city walls as a trophy, the soldiers hiding inside opened the city gates. The myth led to the use of the term for a type of malware that is doubtlessly on your parents computer right now.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     q3: {
         title: 'A Bro',
-        clue: '',
+        clue: 'A stereotype often assiciated with college-aged men. The website Code Switch defines them as using four characteristics: jockish, dudely, stoner-ish, and preppy. These individuals are also often white, heterosexual, come from privilage, and espouse sexist attitudes.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     q4: {
         title: 'Paula Deen',
-        clue: '',
+        clue: 'A clebrity chef and former Food Network personality, who has received criticism for the excessive use fat, salt, and sugar in her recipes. She was sued in 2013 for racial and sexual discrimination, such as using derogatory remarks towards African Americans.',
         category: 'CELEBRITY',
         score: '1',
         color: green
     },
     q5: {
         title: 'Octomom (Nadya Suleman)',
-        clue: '',
+        clue: 'In 2009, this woman gave birth to a living set of octuplets. Critics noted that she used in vitro fertilization despite having 6 children and being on public assistance. In order to support her family, in 2012, she appeared in the adult film Octomom Home Alone.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     q6: {
         title: 'A Hoarder',
-        clue: '',
+        clue: 'A person who compulsively collects things or refuses to discard posessions, resuilting in an unmanagable amount of crap in their home. They are the subject of a popular reality TV show where professionals exploit the person\'s disorder for entertainment.',
         category: 'ET CETERA',
         score: '2',
         color: blue
     },
     q7: {
         title: 'A Neanderthal',
-        clue: '',
+        clue: 'A member of an extinct species closely related to humans. Research suggests that interbreeding between the two groups occurred, with modern on-African humans posessing 1-4% of their genome. They made tools, built dwellings, and had a form of language.',
         category: 'ET CETERA',
         score: '1',
         color: green
     },
     q8: {
         title: 'Damien Hirst',
-        clue: '',
+        clue: 'The wealthiest artist in the world, who is best known for selling a huge dead tiger shark preserved in formaldehyde for more than $8M. He once argued that 9/11 terrorists "need congratulation" for "achiving something which nobody would have thought possible."',
         category: 'CELEBRITY',
         score: '4',
         color: red
     },
     q9: {
         title: 'Deep Throat',
-        clue: '',
+        clue: 'The informat who leaked information about Richard Nixon\'s involvement in the Watergate scandal. Decades later, former FBI Director Mark Felt revealed himself as the informat. A Washington Post editor chose the alisas as a reference to a pornographic film from the 70s.',
         category: 'HISTORICAL FIGURE',
         score: '3',
         color: purple
@@ -1031,63 +1025,63 @@ export default {
     // Page 18
     r1: {
         title: 'William Shatner',
-        clue: '',
+        clue: 'A legendary actor, who portrayed classic characters such as Captain Kirk, TJ Hooker, the guy who saw a plane gremlin on The Twilight Zone, and the Priceline Negotiator. He also had a musical career that began with a spoken word performance of Elton John\'s "Rocket Man."',
         category: 'CELEBRITY',
         score: '1',
         color: green
     },
     r2: {
         title: 'The Tiger Mom',
-        clue: '',
+        clue: 'The author of a controversial memoir about her attempts to use Confucian parenting techniques. While she describes some success with strict parenting, she has since argued that her book is about the softening of her style after her daughter rebelled at age 13.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     r3: {
         title: 'Blackfish',
-        clue: '',
+        clue: 'An orca at Seaworld who raised questions about animal captivity by killing 3 people. In 2010, Mötley Crüe founder Tommy Lee wrote to SeaWorld\'s president stating that he knew humans "still got into the pool and masturbate him with a cow\'s vagina filled with hot water."',
         category: 'CELEBRITY',
         score: '4',
         color: red
     },
     r4: {
         title: 'The Gerber Baby',
-        clue: '',
+        clue: 'The logo of an infant-focused food company. Based on the face of a person who grew up to be a mystery novelist, Ann Turner Cook, the logo was originally intended to be a sketch outline for a future painting, but remained the company\'s official logo for decades.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     r5: {
         title: 'Poppin\' Fresh, the Pillsbury Dough Boy',
-        clue: '',
+        clue: 'The mascot of a company famous for their pre-packaged biscut ingredients. He has been a staple in their advertising for decades, which usually features him being poked in the belly by a finger and responding by gently rubbing his stomach and giggling.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     r6: {
         title: 'Krang',
-        clue: '',
+        clue: 'A fictional supervillian from the Teenage Mutant Ninja Turtles franchise. He is allied with Shredder, who built a mechanical body for him when, following his exile in Dimension X, he was transformed into a brain-like creature with a creaky voice.',
         category: 'FICTIONAL CHARACTER',
         score: '2',
         color: blue
     },
     r7: {
         title: 'Humpty Dumpty',
-        clue: '',
+        clue: 'A character from a nursery rhyme who falls off a well and can\'t be put back together again. Typically portrayed as a humanoid egg, scholars have speculated that he represents Richard III, the humpback king who was defeated at Bosworth Field by Henry VII.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     r8: {
         title: 'A Drone',
-        clue: '',
+        clue: 'An unmanned aerial vehicle used in military operations that are too dangerous for manned aircraft. Their use is controversial, with critics pointing at their indiscriminant use, such as a 2008 airstrike against a wedding party that killed 47 Afgan civilians.',
         category: 'ET CETERA',
         score: '1',
         color: green
     },
     r9: {
         title: 'Johannes Kepler',
-        clue: '',
+        clue: 'A 17th century German astronmer known for his work on planetary motion. In addition to being the namesake of a NASA space observatory, many earthbound institutions are named after him, most recently a blended learning university in Kigali, Rwanda.',
         category: 'CARD BY OLIVER ROTHSCHILD',
         score: '4',
         color: red
@@ -1095,63 +1089,63 @@ export default {
     // Page 19,
     s1: {
         title: 'Joe Camel',
-        clue: '',
+        clue: 'The debonair, bipedal ungulate and mascot for an R.J. Reynolds brand of cigarettes. When internal documents demonstrated that the company was targeting children as future smokers, the character was retired and replaced with a more traditional quadruped in 1997.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     s2: {
         title: 'Free Willy',
-        clue: '',
+        clue: 'The title character from the 1993 film about a young boy\'s attempts to rescue a killer wale from its cruel life as an amusement park attraction. At the film\'s conclusion, he flees a whaling ship by jumping over a rock embankment and returns to his family.',
         category: 'FICTIONAL CHARACTER',
         score: '1',
         color: green
     },
     s3: {
         title: 'David Carradine',
-        clue: '',
+        clue: 'An actor and martial artist who played the lead role in the show Kung Fu and Bill in the film Kill Bill. In 2009 he was found dead in the closet of his Bangkok hotel room. Evidence suggests his death was the result of autoerotic asphyxiation.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     s4: {
         title: 'Carlos Danger (Anthony Weiner)',
-        clue: '',
+        clue: 'The nom de sext of a former Congressman who resigned after he sent explicit photos of himself via Twitter. Despite losing his job over the photos, he was involved in a subsequent scandal after it was revealed that he continued sending explicit photos under the alias.',
         category: 'CELEBRITY',
         score: '2',
         color: blue
     },
     s5: {
         title: 'John Hancock',
-        clue: '',
+        clue: 'A Revolutionary War hero and president of the Second Continental Congress. He was the first member to sign the Declaration of Independence, and his signatrue was so prominent that his name is now synonymous with signing one\'s name on a document.',
         category: 'HISTORICAL FIGURE',
         score: '1',
         color: green
     },
     s6: {
         title: 'Joe Biden',
-        clue: '',
+        clue: 'The 47th Vice President of the US. His blue collar image has led to a series of humorous articles in The Onion, such as "Joe Biden Shows Up To Inaguration With Ponytail" and "Obama Issues Presidential Pardon To Get Biden Out Of Jail For Third Time This Year."',
         category: 'CELEBRITY',
         score: '1',
         color: green
     },
     s7: {
         title: 'Kim Jong-il',
-        clue: '',
+        clue: 'The former Supreme Leader of the Democratic People\'s Republic of Korea and author of On the Art of the Cinema. His family is at the center of a personality cult in the so called "Hermit Kingdom." A famous tumblr collected photos of him looking at things.',
         category: 'HISTORICAL FIGURE',
         score: '2',
         color: blue
     },
     s8: {
         title: 'Mr. Rogers',
-        clue: '',
+        clue: 'The good-natured host of a children\'s show that begins with him singing "It\'s a wonderful day in the neighborhood," putting on a sweater and sneakers, and asking the viewers to be his neighbor. Each episode includes a trip to the Neighborhood of Make-Believe.',
         category: 'HISTORICAL FIGURE',
         score: '2',
         color: blue
     },
     s9: {
         title: 'A Fetus',
-        clue: '',
+        clue: 'The stage of development between embryo and birth. Sometimes categorized by the presence of all major body organs (although not necessarily functioning), typically around the 11th week of gestation. In humans, it is approximately 1.2" in length from crown to rump.',
         category: 'ET CETERA',
         score: '1',
         color: green
@@ -1159,21 +1153,21 @@ export default {
     // Page 20
     t1: {
         title: 'Alex Trebek with a mustache',
-        clue: '',
+        clue: 'The host of the quiz show Jeopardy! for thirty years and counting. He has appeared self-deprecatingly as a version of himself in films and TV shows, including Seinfeld and Short Cuts. For the purposes of this card, he still has really great facial hair on his upper lip.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     t2: {
         title: 'Alex Trebek without a mustache',
-        clue: '',
+        clue: 'The host of the quiz show Jeopardy! for thirty years counting. He began hosting game shows in high school. For purposes of this card, he shaved his iconic facial hair on his upper lip in 2001. In 2008 he wore fake facial hair on his upper lip for April Fool\'s Day.',
         category: 'CELEBRITY',
         score: '3',
         color: purple
     },
     t3: {
         title: 'A Virgin',
-        clue: '',
+        clue: 'A person who has never engaged in sexual intercourse, either voluntarily or involuntarily. Once used only to refer to young women, it now describes any person who has not participated in that activity and can even be used metaphorically, as in a nonalcoholic drink.',
         category: 'ET CETERA',
         score: '1',
         color: green
@@ -3325,7 +3319,7 @@ export default {
         score: '3',
         color: purple
     }
-    // 09 left intentionally blank.
+    // BD left intentionally blank.
     // Page 54
     // This page is inextricably just a copy of page 53.
     // Page 55
