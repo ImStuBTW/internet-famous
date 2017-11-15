@@ -40,7 +40,7 @@ class Welcome extends React.Component {
                 <div className="menu">
                     <div className="menu-section menu-top">
                         <FitText compressor={0.8}><h1>Internet Famous</h1></FitText>
-                        <FitText compressor={1.2}><h2>An Open-Source Monikers App</h2></FitText>
+                        <FitText compressor={1.5}><h2>An Open-Source Rendition of a Party Game Classic</h2></FitText>
                     </div>
                     <div className="menu-section menu-middle">
                         <div className="coming-soon">
@@ -59,7 +59,7 @@ class Welcome extends React.Component {
                         <FitText compressor={1.6}><a onClick={() => this.handleLink('/about')} role="button" className="btn btn-default btn-lg btn-block">About Internet Famous</a></FitText>
                     </div>
                     <div className="menu-section menu-bottom">
-                        <FitText compressor={3}><p>Pardon our mess! Internet Famous is still in active development. Feel free to check out the <a href="http://www.github.com/imstuartjones">Github page</a> for more information.</p></FitText>
+                        <FitText compressor={3}><p>Pardon our mess! Internet Famous is still in active development. Feel free to check out the <a href="http://www.github.com/imstuartjones/internet-famous">Github page</a> for more information.</p></FitText>
                     </div>
                 </div>
             </CardWrapper>

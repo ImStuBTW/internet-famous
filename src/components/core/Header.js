@@ -29,7 +29,7 @@ class Header extends React.Component {
                 <div className="header-layout">
                     <div className="app">
                         {!this.props.gameOn ?
-                        <h2>Welcome</h2> :
+                        <h2>Internet Famous</h2> :
                         <h2>Score: {this.props.redTeam ? this.props.redScore : this.props.blueScore}</h2>}
                     </div>
                     <div className="settings">

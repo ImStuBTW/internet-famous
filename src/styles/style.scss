@@ -15,6 +15,7 @@ $ui-font-shadow-red: #aa6a6a;
 $ui-blue: #3a3a6a;
 $ui-font-blue: #6a6afa;
 $ui-font-shadow-blue: #6a6aaa;
+$ui-scoreboard-bg: #ececec;
 
 //****************//
 // Page Styles    //
@@ -294,8 +295,14 @@ body {
     text-align: center;
 }
 
-.intro-middle, intro-bottom {
+.intro-middle, .intro-bottom {
     text-align: left;
+}
+
+.outro-middle {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 //****************//
@@ -445,7 +452,7 @@ body {
 .scoreboard-red-score {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: $ui-font-shadow-red;
+    //background-color: $ui-scoreboard-bg;
     color: $ui-font-red;
     margin-left: 12%;
     margin-right: 3%;
@@ -454,7 +461,7 @@ body {
 .scoreboard-blue-score {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: $ui-font-shadow-blue;
+    //background-color: $ui-scoreboard-bg;
     color: $ui-font-blue;
     margin-right: 12%;
     margin-left: 3%;

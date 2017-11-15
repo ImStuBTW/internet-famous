@@ -31,7 +31,7 @@ export function loadAndShuffleCardsSuccess(value) {
 
 export function loadAndShuffleCards() {
     return (dispatch, getState) => {
-        dispatch(loadAndShuffleCardsSuccess(getState().deck));
+        dispatch(loadAndShuffleCardsSuccess(shuffle(getState().deck.slice())));
     };
 }
 

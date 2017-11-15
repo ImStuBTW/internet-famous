@@ -45,13 +45,13 @@ class QuickOutro extends React.Component {
         }
         return (
             <div className="menu">
-                <div className="menu-section intro-top">
+                <div className="menu-section outro-top">
                     <FitText compressor={0.8}>{title}</FitText>
                 </div>
-                <div className="menu-section intro-middle">
+                <div className="menu-section outro-middle">
                     {body}
                 </div>
-                <div className="menu-section intro-bottom">
+                <div className="menu-section outro-bottom">
                     <FitText compressor={1.6}><a onClick={() => this.handleLink('/quick')} role="button" className="btn btn-default btn-lg btn-block">Start A New Quick Play</a></FitText>
                     <FitText compressor={1.6}><a onClick={() => this.handleLink('/')} role="button" className="btn btn-primary btn-lg btn-block">Go Home</a></FitText>
                 </div>

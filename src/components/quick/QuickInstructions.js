@@ -29,7 +29,7 @@ class QuickInstructions extends React.Component {
                 return (
                     <div className="menu">
                         <div className="menu-section instructions-top">
-                            <FitText compressor={0.8}><h2>Round 1 Instructions</h2></FitText>
+                            <FitText compressor={0.8}><h2>Round 1</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
                             <FitText compressor={2}><p>You can use any words, sounds, or gestures except the card name itself. You're free to use any part of the clue text if you'd like. If you say any part of the name, you have to skip that card this turn.</p></FitText>
@@ -43,7 +43,7 @@ class QuickInstructions extends React.Component {
                 return (
                     <div className="menu">
                         <div className="menu-section instructions-top">
-                            <FitText compressor={0.8}><h2>Round 2 Instructions</h2></FitText>
+                            <FitText compressor={0.8}><h2>Round 2</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
                             <FitText compressor={2}><p>Use only one word, which can be anything except the name itself. You can repeat that word as many times as you like, but no sounds or gestures.</p></FitText>
@@ -57,7 +57,7 @@ class QuickInstructions extends React.Component {
                 return (
                     <div className="menu">
                         <div className="menu-section instructions-top">
-                            <FitText compressor={0.8}><h2>Round 3 Instructions</h2></FitText>
+                            <FitText compressor={0.8}><h2>Round 3</h2></FitText>
                         </div>
                         <div className="menu-section instructions-middle">
                             <FitText compressor={2}><p>Just charades. No words. Sound effects are OK.</p></FitText>

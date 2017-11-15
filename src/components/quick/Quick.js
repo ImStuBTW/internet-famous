@@ -40,6 +40,7 @@ class Quick extends React.Component {
 
     startGame() {
         this.props.actions.randomDeck();
+        this.props.actions.loadAndShuffleCards();
     }
 
     startRound() {
