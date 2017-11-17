@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import FitText from 'react-fittext';
 import CardWrapper from '../core/CardWrapper';
-import * as EmojiOne from 'react-svg-emojione';
+import * as emojiOne from '../../constants/emojiOne';
 import * as initActions from '../../actions/initActions';
 import * as phaseActions from '../../actions/phaseActions';
 import * as roundActions from '../../actions/roundActions';
@@ -37,11 +37,11 @@ class QuickOutro extends React.Component {
         }
         else if(this.props.redScore > this.props.blueScore) {
             title = <h2 className="red-team">Congradulations Red Team!</h2>;
-            body = <EmojiOne.cake />;
+            body = <emojiOne.cake />;
         }
         else {
             title = <h2 className="blue-team">Congradulations Blue Team!</h2>;
-            body = <EmojiOne.cake />;
+            body = <emojiOne.cake />;
         }
         return (
             <div className="menu">

@@ -2,7 +2,8 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, browserHistory } from 'react-router';
+import { createHistory } from 'history';
+import { Router, useRouterHistory } from 'react-router';
 
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
@@ -13,6 +14,10 @@ import initialState from './reducers/initialState';
 import routes from './routes';
 
 import './styles/style.scss';
+
+const browserHistory = useRouterHistory(createHistory)({
+    basename: '/internet-famous/'
+});
 
 const store = configureStore(initialState, browserHistory);
 
